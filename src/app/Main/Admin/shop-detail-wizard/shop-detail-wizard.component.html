@@ -1,0 +1,246 @@
+<section
+  style="background-image: url('./../../assets/images/bg-01.jpg'); background-repeat: no-repeat; background-size: cover;height: 100vh;">
+
+  <div class="container py-5">
+
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-3 col-lg-3 col-md-2 col-12"></div>
+      <div class="col-xl-6 col-lg-6 col-md-8 col-12 mb-5">
+
+        <div class="card shadow-2-strong" style="border-radius: 1rem">
+          <div class="card-body p-5">
+            <div class="mb-3">
+              <a href="" [routerLink]="['../']"><img src="./../assets/images/midanlogo.png" class="img-fluid rounded"
+                  height="100px" width="130px"></a>
+
+            </div>
+
+            <div *ngIf="step!=1 && step<6" class="progress mb-4">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width':barPercent()}"></div>
+            </div>
+            <div *ngIf="step==1" id="step1">
+              <h3>{{step1Title}}</h3>
+              <p class="mb-4">{{step1Paragraph}}</p>
+              <div class="form-group mb-4">
+                <label class="label" for="storeName">store name</label>
+                <div class="input-group mb-3">
+                  <input type="text" [(ngModel)]="storeName" class="form-control" placeholder="Enter your store name"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2" data-toggle="tooltip" data-placement="top"
+                      [title]="storeNameTooltip"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="storeName.length>0">
+                <div class="d-flex">
+                  <div>
+                    <p>{{storeName}}.midaan.com</p>
+                  </div>
+                  <div class="ml-auto"><a href="">Edit</a></div>
+                </div>
+                <small>{{shopURlInfoText}}</small>
+              </div>
+            </div>
+
+
+            <div *ngIf="step==2" id="step2">
+              <h3>{{step2Title}}</h3>
+              <p class="mb-4">{{step2Paragraph}}</p>
+              <div class="container form-group mb-4">
+                <div>
+                  <div class="row">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        I'm just starting
+                      </label>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                      <label class="form-check-label" for="exampleRadios2">
+                        I'm already selling online or in person
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="storeName.length>0">
+                <div class="d-flex">
+                  <div>
+                    <p>{{storeName}}.midaan.com</p>
+                  </div>
+                  <div class="ml-auto"><a href="">Edit</a></div>
+                </div>
+                <small>{{shopURlInfoText}}</small>
+              </div>
+            </div>
+
+
+            <div *ngIf="step==3" id="step3">
+              <h3>{{step3Title}}</h3>
+              <p class="mb-4">{{step3Paragraph}}</p>
+              <div class="container form-group mb-4">
+                <div>
+                  <div class="row">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                      <label class="form-check-label" for="exampleRadios2">
+                        No, I'd like to start fresh
+                      </label>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                      <label class="form-check-label" for="exampleRadios3">
+                        I'm not sure yet
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="storeName.length>0">
+                <div class="d-flex">
+                  <div>
+                    <p>{{storeName}}.midaan.com</p>
+                  </div>
+                  <div class="ml-auto"><a href="">Edit</a></div>
+                </div>
+                <small>{{shopURlInfoText}}</small>
+              </div>
+            </div>
+
+            <div *ngIf="step==4" id="step3">
+              <h3>{{step4Title}}</h3>
+              <p class="mb-4">{{step4Paragraph}}</p>
+              <div class="container form-group mb-4">
+                <div>
+                  <div class="row">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" name="examplecheck1" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Physical products
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" name="examplecheck2" id="exampleRadios2" value="option2" checked>
+                      <label class="form-check-label" for="exampleRadios2">
+                        Digital Products (Including music, digital art etc.)
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" name="examplecheck3" id="exampleRadios3" value="option3" checked>
+                      <label class="form-check-label" for="exampleRadios3">
+                        Services (including coaching, housekeeping, etc.)
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" name="examplecheck4" id="exampleRadios4" value="option4" checked>
+                      <label class="form-check-label" for="exampleRadios4">
+                        I'm not sure
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="storeName.length>0">
+                <div class="d-flex">
+                  <div>
+                    <p>{{storeName}}.midaan.com</p>
+                  </div>
+                  <div class="ml-auto"><a href="">Edit</a></div>
+                </div>
+                <small>{{shopURlInfoText}}</small>
+              </div>
+            </div>
+
+
+            <div *ngIf="step==5" id="step3">
+              <h3>{{step5Title}}</h3>
+              <p class="mb-4">{{step5Paragraph}}</p>
+              <div class="container form-group mb-4">
+                <div>
+                  <div class="row">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" name="examplecheck1" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        I’ll find or make products myself
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" name="examplecheck2" id="exampleRadios2" value="option2" checked>
+                      <label class="form-check-label" for="exampleRadios2">
+                        I’ll get them from a dropshipping supplier
+                      </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" name="examplecheck3" id="exampleRadios3" value="option3" checked>
+                      <label class="form-check-label" for="exampleRadios3">
+                        I’ll use a print on demand service with my logo or design
+
+                      </label>
+                    </div>
+
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" name="examplecheck4" id="exampleRadios4" value="option4" checked>
+                      <label class="form-check-label" for="exampleRadios4">
+                        I'm not sure
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="storeName.length>0">
+                <div class="d-flex">
+                  <div>
+                    <p>{{storeName}}.midaan.com</p>
+                  </div>
+                  <div class="ml-auto"><a href="">Edit</a></div>
+                </div>
+                <small>{{shopURlInfoText}}</small>
+              </div>
+            </div>
+
+
+            <div *ngIf="step==6" id="step6">
+              <h3>{{step6Title}}</h3>
+              <p class="mb-4">{{step6Paragraph}}</p>
+              <div class="form-group mb-4">
+                <label class="label" for="country">Country/Region</label>
+                <div class="mb-3">
+                  <select class="form-control" name="country" id="country">
+                    <option value="1" selected>India</option>
+                    <option value="2">USA</option>
+                    <option value="3">UK</option>
+                    <option value="4">Russia</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mt-3">
+              <div *ngIf="step!=1">
+                <span><i class="fa fa-chevron-left" aria-hidden="true"></i><a class="btn" (click)="backClick()">Back</a></span>
+              </div>
+              <div class="ml-auto">
+                <a class="btn" *ngIf="step!=6" (click)="skipClick()">Skip</a>
+                <button class="btn btn-success" (click)="nextClick()">Next</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-2 col-12"></div>
+      <div></div>
+    </div>
+
+
+  </div>
+</section>

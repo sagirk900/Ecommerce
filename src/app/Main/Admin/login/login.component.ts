@@ -28,6 +28,9 @@ pageTitle!:string;
     return false;
   }
   formSubmit(){
-    this.router.navigate(['Purchase']);
+    if(this.isLoginPage)
+      this.router.navigate(['Purchase']);
+    else
+      this.router.navigate(['./ShopDetail']);
   }
 }
