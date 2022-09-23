@@ -1,0 +1,79 @@
+
+<section style="background-image: url('./../../assets/images/bg-01.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+  <div class="container py-5 h-100">
+
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5 mb-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5">
+            <div class="text-center mb-5">
+           <a href="" [routerLink]="['../../']"><img src="./../assets/images/midanlogo.png" class="img-fluid rounded" height="100px" width="130px"></a>
+          </div>
+            <h3 class="mb-5">{{pageTitle}}</h3>
+
+            <div class="mb-4">
+              <div class="input-group">
+                <div class="input-group-prepend grpClass">
+                  <i class="fa fa-user input-group-text" id="usernameIcon" aria-hidden="true"></i>
+                </div>
+                <input type="email" name="Email" class="form-control email" required id="floatingInput" ngModel
+                  placeholder="Email" #UserEmail>
+              </div>
+              <!-- <span *ngIf="UserEmail.invalid && UserEmail.touched" class="ErrorSpan">Please enter your Email</span> -->
+            </div>
+            <div class="mb-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                 <i class="fa fa-eye-slash input-group-text" aria-hidden="true"></i>
+                </div>
+                <input class="form-control" required placeholder="Password" [type]="typeCnfPassword" id="ConfirmPass"
+                  ngModel name="Password">
+
+              </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-start mb-4">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+              <label class="form-check-label" for="form1Example3"> Remember password </label>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" (click)="formSubmit()" type="submit">Login</button>
+            <div class="pos-rel or-separator"><span class="pos-abs absolute-center text-8 c-gray-1 bg-white px12">or log in with</span></div>
+            <div class="row">
+              <div class="col-6">
+                <button class="btn btn-lg btn-block btn-outline-danger"
+              type="submit"><i class="fa fa-google me-2"></i>  google</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-lg btn-block btn-outline-primary mb-2"
+                type="submit"><i class="fa fa-facebook-f me-2"></i> facebook</button>
+              </div>
+            </div>
+            <p *ngIf="!isLoginPage" class="mt32 section-text-14 c-black-3">By continuing, you agree to our <a class="c-black-3 text-medium underline underline-h" href="https://mydukaan.io/terms" rel="noopener noreferrer" target="_blank">Terms of Use</a> and <a class="c-black-3 text-medium underline underline-h" href="https://mydukaan.io/privacy" rel="noopener noreferrer" target="_blank">Privacy Policy</a></p>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="isLoginPage else elseBlock" class="col-12">
+      <div class=" text-center">
+        <span style="color: whitesmoke;">
+        Don't have an account..? <a href="#" [routerLink]="['/Login',1]" style="color: whitesmoke; text-decoration: underline;">Get Started</a>
+      </span>
+      </div>
+    </div>
+    <ng-template #elseBlock>
+      <div class="col-12">
+        <div class=" text-center">
+          <span style="color: whitesmoke;">
+          Already a member..? <a href="#" [routerLink]="['/Login',0]" style="color: whitesmoke; text-decoration: underline;">Log in</a>
+        </span>
+        </div>
+      </div>
+    </ng-template>
+
+    </div>
+
+
+  </div>
+</section>

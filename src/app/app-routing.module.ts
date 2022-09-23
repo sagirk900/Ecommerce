@@ -1,7 +1,15 @@
+import { PlanPurchaseComponent } from './Main/Admin/plan-purchase/plan-purchase.component';
+import { UserDashboardComponent } from './Main/User/Modules/user-dashboard/user-dashboard.component';
+import { LoginComponent } from './Main/Admin/login/login.component';
+import { StartComponent } from './Main/Admin/Start/start.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component:StartComponent},
+  {path:'Login/:id',component:LoginComponent},
+  {path:'Purchase',component:PlanPurchaseComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

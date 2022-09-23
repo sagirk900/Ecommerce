@@ -1,0 +1,38 @@
+.pos-rel {
+  position: relative;
+}
+
+.or-separator {
+  height: 1px;
+  margin: 30px 25px;
+  background-color: #ccc;
+}
+.pos-abs {
+  position: absolute;
+}
+.c-gray-1 {
+  color: gray;
+}
+.text-8 {
+  font-size: 14px;
+  line-height: 20px;
+}
+.px12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.bg-white {
+  background-color: #fff;
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.email:focus .fa-user
+{
+  color: blue;
+}

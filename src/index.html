@@ -6,8 +6,114 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.png" rel="icon">
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+
+
 </head>
 <body>
   <app-root></app-root>
+<!-- Vendor JS Files -->
+<script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="./assets/vendor/aos/aos.js"></script>
+<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="./assets/js/main.js"></script>
+
+  <script>
+
+    window.onload=canvas;
+
+    function canvas(){
+        var canvas = document.getElementById("myCanvas");
+
+        if(canvas && canvas.getContext("2d")){
+        var ctx = canvas.getContext("2d");
+        var img = document.getElementById("map");
+        red=0;
+        green=0;
+        blue=255;
+        r=20;
+        start=1;
+        setInterval(() => {
+        ctx.drawImage(img,100,10,1200,1000);
+        ctx.fillStyle="blue";
+        ctx.beginPath();
+        ctx.arc(950, 205, start, 0, Math.PI * 2, true);
+
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(750, 305, start, 0, Math.PI * 2, true);
+
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(450, 605, start, 0, Math.PI * 2, true);
+
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(350, 305, start, 0, Math.PI * 2, true);
+
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(650, 505, start, 0, Math.PI * 2, true);
+
+        ctx.fill();
+        if(start<r+1){
+            start+=4;
+            if(start==20){
+                start=1;
+            }
+        }
+        else{
+          start=1;
+        }
+        }, 100);
+    }
+    }
+</script>
+
+
+<script defer="" src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function collapseSidebar() {
+                $('#sidebar').toggleClass('active');
+
+          }
+    </script>
 </body>
 </html>
+

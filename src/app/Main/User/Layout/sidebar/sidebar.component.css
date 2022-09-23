@@ -1,0 +1,13 @@
+.comname
+{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.comname:hover
+{
+  transform: scale(1.1);
+}
+.complogo
+{
+  margin-bottom: 15px !important;
+}

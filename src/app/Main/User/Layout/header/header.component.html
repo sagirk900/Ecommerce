@@ -1,0 +1,140 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+
+    <button type="button" (click)="collapsesidebar()" id="sidebarCollapse" class="btn btn-info">
+      <svg class="svg-inline--fa fa-align-left fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="align-left"
+        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+        <path fill="currentColor"
+          d="M288 44v40c0 8.837-7.163 16-16 16H16c-8.837 0-16-7.163-16-16V44c0-8.837 7.163-16 16-16h256c8.837 0 16 7.163 16 16zM0 172v40c0 8.837 7.163 16 16 16h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16zm16 312h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm256-200H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16h256c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16z">
+        </path>
+      </svg><!-- <i class="fas fa-align-left"></i> -->
+      <span></span>
+    </button>
+    <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <svg class="svg-inline--fa fa-align-justify fa-w-14" aria-hidden="true" data-prefix="fas"
+        data-icon="align-justify" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+        <path fill="currentColor"
+          d="M0 84V44c0-8.837 7.163-16 16-16h416c8.837 0 16 7.163 16 16v40c0 8.837-7.163 16-16 16H16c-8.837 0-16-7.163-16-16zm16 144h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 256h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0-128h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+        </path>
+      </svg>
+    </button> -->
+    <button class="navbar-toggler" type="button" (click)="!iscollapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="iscollapsed">
+      <form class="form-inline">
+        <div class="input-group" style="margin-left: 300px;">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+          </div>
+          <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" size="30">
+        </div>
+      </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link headerfd" href="#">
+              <i class="fa fa-commenting" style="width:20px;font-size:medium" aria-hidden="true"></i>
+              Send feedback
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link"><span style="font-weight: bold;">|</span></div>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="nav-link dropdown" data-toggle="tooltip" title="announcment" data-placement="top">
+              <button class="btn headerbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bullhorn" aria-hidden="true" style="font-size: 15px;"></i>
+              </button>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="height:80vh; overflow-y: scroll; background-color: white !important;">
+                <div class="card dropdown-item m-2" style="width: 25rem; border: none;">
+                  <img class="card-img-top" src="./../../../../../assets/img/about.jpg" alt="Card image cap">
+                  <div class="card-body text-wrap">
+                    <h5 class="card-title">Tutorials</h5>
+                    <p class="card-text">Free tutorials about template content.</p>
+                   <div class="row">
+                    <div class="col-6">
+                      <button class="btn btn-primary">Try Now</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-outline-primary">Read more</button>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="card dropdown-item m-2" style="width: 25rem; border: none;">
+                  <img class="card-img-top" src="./../../../../../assets/img/about.jpg" alt="Card image cap">
+                  <div class="card-body text-wrap">
+                    <h5 class="card-title">Tutorials</h5>
+                    <p class="card-text">Free tutorials about template content.</p>
+                   <div class="row">
+                    <div class="col-6">
+                      <button class="btn btn-primary">Try Now</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="btn btn-outline-primary">Read more</button>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="nav-link ">
+              <button class="btn headerbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-caret-down" aria-hidden="true" style="font-size: 15px;" data-toggle="tooltip" title="More"
+                  data-placement="top"></i>
+              </button>
+              <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item d-flex pt-2">
+                  <div class="pt-1">
+                  <span class="storeStatus">Store status</span>
+                </div>
+                <div>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="m-2 moreItemDiv">
+                  <i class="fa fa-user m-2 moreicons" aria-hidden="true"></i> <span>My Account</span>
+                </div>
+                <div class="m-2 moreItemDiv">
+                  <i class="fa fa-wrench m-2 moreicons" aria-hidden="true"></i> <span>Store Setting</span>
+                </div>
+                <div class="m-2 moreItemDiv">
+                  <i class="fa fa-laptop m-2 moreicons" aria-hidden="true"></i> <span>Tutorials</span>
+                </div>
+                <div class="m-2 moreItemDiv" >
+                  <i class="fa fa-question m-2 moreicons" aria-hidden="true"></i> <span>Help Center</span>
+                </div>
+                <div class="m-2 moreItemDiv">
+                  <i class="fa fa-users m-2 moreicons" aria-hidden="true"></i> <span>Midan Community</span>
+                </div>
+                <div class="m-2 moreItemDiv">
+                  <i class="fa fa-envelope-o m-2 moreicons" aria-hidden="true"></i> <span>Get in touch</span>
+                </div>
+                <div class="m-2 moreItemDiv">
+                  <i class="fa fa-sign-out m-2 moreicons" aria-hidden="true"></i> <span>Sign Out</span>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="m-2 d-flex">
+                  <div class="ml-3 mr-4">Our RoadMap</div>
+                  <div><i class="fa fa-apple mr-2 moreicons" aria-hidden="true"></i> <i class="fa fa-play-circle moreicons" aria-hidden="true"></i></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
