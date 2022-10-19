@@ -1,0 +1,55 @@
+
+.home-step-title
+{
+  font-size: 28px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif !important;
+}
+.home-step-p
+{
+  color: #4d4d4d;
+  font-size: 16px;
+    line-height: 24px;
+    font-family: 'poppins', sans-serif !important;
+}
+.home-step-strong
+{
+  font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif !important;
+}
+.home-step-p1
+{
+  font-size: 15px;
+  line-height: 20px;
+  color: gray;
+  font-family: 'poppins', sans-serif !important;
+}
+.home-step-p2
+{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'poppins', sans-serif !important;
+}
+
+.home-step-card
+{
+  border: none;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.home-step-div1:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.home-step-div2:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.home-step-div3:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

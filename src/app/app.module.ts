@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { MoreModulesModule } from './Main/User/MoreModules/moreModules.module';
 import { RouterModule } from '@angular/router';
 import { AdminModule } from './Main/Admin/admin.module';
 import { NgModule } from '@angular/core';
@@ -10,7 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AdminModule,
     RouterModule,
     MainModules,
-    NgbModule
+    NgbModule,
+    MoreModulesModule,
+    FormsModule
 
   ],
   providers: [],

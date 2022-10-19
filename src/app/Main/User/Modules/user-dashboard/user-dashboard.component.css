@@ -24,7 +24,7 @@ svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-bl
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 .wrapper {
     font-family: 'Poppins', sans-serif;
-     background: linear-gradient(166deg, rgba(20,143,150,1) 0%, rgba(125,24,134,1) 43%, rgba(0,212,255,1) 100%) !important;
+     background: #146eb4 !important;
 
 }
 
@@ -45,7 +45,7 @@ a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: linear-gradient(166deg, rgba(20,143,150,1) 0%, rgba(125,24,134,1) 43%, rgba(0,212,255,1) 100%);
+    background: #146eb4 !important;
     border: none;
     border-radius: 0;
     /* margin-bottom: 40px; */
@@ -173,7 +173,7 @@ a.article:hover {
     height: 100vh;
     transition: all 0.3s;
     background-color: #fafafa;
-    overflow: hidden;
+overflow: hidden;
 }
 .mainContent{
     padding: 20px;
