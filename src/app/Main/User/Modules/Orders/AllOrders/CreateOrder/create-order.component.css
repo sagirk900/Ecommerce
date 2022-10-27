@@ -1,0 +1,178 @@
+
+               .allorderformcontrol:focus
+{
+box-shadow: none;
+border-color: black;
+}
+.allorderformcontrol
+{
+    font-size: 14px;
+    line-height: 22px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    /* padding: 2px 28px 2px 40px; */
+    color: #1a181e;
+    /* width: 100%; */
+}
+        .createordecard1
+        {
+            padding: 15px;
+        }
+        .createordecard1header
+        {
+            background-color: white;
+            font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+        }
+        .createordecard2
+        {
+            padding: 15px;
+        }
+        .createordecard2header
+        {
+            background-color: white;
+            font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+        }
+        .createorderbtn:hover
+{
+    background-color: #146eb4;
+    color: #fff;
+    border-color: #146eb4;
+}
+.createorderbtn
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 7px 24px;
+    background-color: #146eb4;
+    color: #fff;
+    border-color: #146eb4;
+}
+
+.createordercard3h5
+{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.createordercard3p
+{
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+.createordecard3h6
+{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.createordecard3paymethod
+{
+    color: #4d4d4d;
+    font-size: 16px;
+    line-height: 20px;
+}
+.payment-option-button.selected {
+    color: #4d4d4d;
+    cursor: pointer;
+    display: inline-block;
+    transition: .15s ease-in-out;
+    background-color: #0000;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid #146eb4;
+    background-color: #fff;
+    background-color: #146eb41a!important;
+}
+.payment-method-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 12px;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-8 {
+    font-size: 14px;
+    line-height: 20px;
+}
+.p12 {
+    padding: 12px;
+}
+.payment-option-button {
+    cursor: pointer;
+    display: inline-block;
+    transition: .15s ease-in-out;
+    background-color: #0000;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 1px solid #d9d9d9;
+    color: #4d4d4d;
+    font-weight: 500;
+    padding: 8px 24px;
+    background-color: #fff;
+    display: inline-flex!important;
+    align-items: center;
+}
+.createordecard3jumbo p
+{
+    font-size: 14px;
+    line-height: 20px;
+    color: #4d4d4d;
+}
+.svg
+{
+
+    animation-name: centerimg;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+
+}
+@keyframes centerimg
+{
+    0%
+    {
+        transform: scale(1.1);
+    }
+    25%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+    75%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(1.1);
+    }
+}
+.allordersnoorderfound
+{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.allorderstorelink
+{
+    color: #4d4d4d;
+    font-size: 16px;
+    line-height: 24px;
+}

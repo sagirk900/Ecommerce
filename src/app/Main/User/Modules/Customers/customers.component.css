@@ -1,0 +1,171 @@
+
+        .svg
+{
+
+    animation-name: centerimg;
+    animation-duration: 2s;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+    animation-direction: alternate;
+  transition: all 0.5s ease-in-out;
+}
+@keyframes centerimg
+{
+    0%
+    {
+        transform: scale(1.1);
+    }
+    25%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.1);
+    }
+    75%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(1.1);
+    }
+}
+.customerp
+{
+    font-size: 16px;
+    line-height: 24px;
+    color: #4d4d4d;
+    font-family: 'poppins',sans-serif;
+}
+.customerh6
+{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: 'poppins',sans-serif;
+}
+.customerimport
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 24px;
+    border: solid 1px rgba(0,0,0,0);
+    background-color: #146eb4;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.customerimport:hover
+{
+    transform: scale(1.1);
+}
+.customeradd
+{
+    font-size: 16px;
+    line-height: 24px;
+    color: #4d4d4d;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+}
+.customeradd:hover
+{
+    transform: scale(1.1);
+}
+.addcustomerformbtn
+{
+    background-color: #146eb4;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.addcustomerformbtn:hover
+{
+    transform: scale(1.1);
+}
+.import-sub-modal-item {
+    width: 164px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.d-flex-c-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mr24 {
+    margin-right: 24px!important;
+}
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-text-5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.importcustomermodalcol1
+{
+    cursor: pointer;
+    border: 0.5px solid lightgray;
+
+}
+.importcustomermodalcol2
+{
+    cursor: pointer;
+    border: 0.5px solid lightgray;
+}
+.importcustomermodalcol1:hover
+{
+background-color: lightgray;
+}
+.importcustomermodalcol2:hover
+{
+    background-color: lightgray;
+}
+.importcustomermodalcol1 i
+{
+    font-size: 40px;
+}
+.importcustomermodalcol2 i
+{
+    font-size: 40px;
+}
+.importcustomermodalcol1 p
+{
+    font-size: 18px;
+}
+.importcustomermodalcol2 p
+{
+    font-size: 18px;
+}
+input[type="file"] {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+::-webkit-file-upload-button {
+    background-color: #146eb4;
+  color: white;
+  padding: 0.5em;
+  border: 1px solid #146eb4;
+}
+.importcustomerexcelmodalbtn
+{
+    background-color: #146eb4;
+    color: white;
+}
+
+

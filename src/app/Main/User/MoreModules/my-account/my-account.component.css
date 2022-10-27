@@ -1,0 +1,48 @@
+
+.fixed-container {
+  max-width: 1062px;
+  margin: 0 auto;
+}
+.mr32 {
+  margin-right: 32px!important;
+}
+.account-navigation-card {
+  padding: 24px;
+  border-radius: 8px;
+  min-width: 270px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 32px;
+  background-color: white;
+}
+.fill-available, .catalog-products {
+  width: 100%;
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+.account-navigation-card .account-navigation-item:not(:last-child) {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.account-navigation-card .account-navigation-item:first-child {
+  padding-top: 0;
+}
+.account-navigation-card .account-navigation-item:last-child {
+  padding-bottom: 0;
+}
+.account-navigation-card .account-navigation-item {
+  padding-top: 12px;
+  /* padding-bottom: 12px; */
+  color: gray;
+}
+.account-navigation-item-label{
+  font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.account-navigation-card .account-navigation-item.active, .account-navigation-card .account-navigation-item a:hover {
+  color: #146eb4 !important;
+}

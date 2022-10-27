@@ -103,6 +103,7 @@ input:checked + .slider:before {
 .moreItemDiv:hover{
 background-color: #2196F3;
 color: #fafafa;
+cursor: pointer;
 }
 
 

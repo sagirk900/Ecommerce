@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 declare function collapseSidebar():any;
 @Component({
@@ -8,12 +9,19 @@ declare function collapseSidebar():any;
 })
 export class HeaderComponent implements OnInit {
 public iscollapsed = true;
-  constructor() { }
+  constructor(
+    private router:Router
+  ) { }
 
   ngOnInit(): void {
   }
   collapsesidebar(){
     collapseSidebar();
+  }
+  gotoPath(path:string){
+    console.log("clicked link");
+    // path= '/'+path;
+    this.router.navigateByUrl('User/'+path);
   }
 
 }

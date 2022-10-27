@@ -1,0 +1,315 @@
+<div class="container-fluid">
+  <div class="row mx-2 mt-3">
+      <div class="col-12">
+          <div class="alert alert-info alert-dismissible fade show" role="alert">
+              <strong class="text-center">Set up Delivery and fulfill your orders hassle-free!</strong>
+                  <button type="button" class="ml-xl-5 ml-lg-5 ml-0 setupnow btn btn-outline-info">Set up now</button>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+      </div>
+  </div>
+  <div class="row mx-2 mt-3">
+      <div class="col-xl-3 col-lg-5 col-md-12 col-12">
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1" style="background-color: white;" ><i class="fa fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control allorderformcontrol" placeholder="Order Id, phone or a name" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+      </div>
+      <div class="col-xl-9 col-lg-7 col-md-12 col-12 text-center d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column justify-content-xl-end justify-content-lg-end justify-content-md-end justify-content-sm-center">
+          <div class="dropdown allorderdropdown mb-xl-0 mb-lg-0 mb-md-3 mb-3">
+              <button class="btn btn-primary allorderbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               change order status
+              </button>
+              <div class="dropdown-menu mt-xl-3 mt-lg-3" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#pendingorder">Pending to accepted</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#acceptorder">Accepted to shipped</a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#selfshipped">Self-Shipped to Delivered</a>
+              </div>
+            </div>
+            <div class="modal fade" id="pendingorder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Pending orders</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      You don't have any pending orders.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="acceptorder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Accepted orders</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      You don't have any accepted orders.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="selfshipped" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Self shipped orders</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      You don't have any self shipped orders.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="dropdown allorderdropdown  ml-xl-3 ml-lg-3 ml-md-0 ml-0 mb-xl-0 mb-lg-0 mb-md-3 mb-3">
+              <button class="btn btn-primary allorderbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               choose Date
+              </button>
+              <div class="dropdown-menu mt-xl-3 mt-lg-3" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Order date</a>
+                <a class="dropdown-item" href="#">Modified date</a>
+
+              </div>
+            </div>
+            <div class="dropdown allorderdropdown ml-xl-3 ml-lg-3 ml-md-0 ml-0 mb-xl-0 mb-lg-0 mb-md-3 mb-3">
+              <button class="btn btn-primary allorderbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Special Filters
+              </button>
+              <div class="dropdown-menu p-2 mt-xl-3 mt-lg-3" aria-labelledby="dropdownMenuButton">
+                  <h6 class="dropdown-header text-center">PAYMENT</h6>
+                  <form action="">
+                      <div class="form-check dropdown-item">
+
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Paid orders
+                          </label>
+                          </div>
+                        <div class="form-check dropdown-item">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            COD orders
+                          </label>
+                        </div>
+                        <div class="form-check dropdown-item">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Unpaid orders
+                          </label>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header text-center">CHANNEL</div>
+                        <div class="form-check dropdown-item">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Online orders
+                          </label>
+                        </div>
+                        <div class="form-check dropdown-item">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Manual orders
+                          </label>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header text-center">OTHERS</div>
+                        <div class="form-check dropdown-item">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Dukaan Delivery Orders
+                          </label>
+                        </div>
+                        <div class="form-check dropdown-item">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Self shipped orders
+                          </label>
+                        </div>
+                        <div class="form-check dropdown-item">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6" checked>
+                          <label class="form-check-label" for="defaultCheck1">
+                            Returned orders
+                          </label>
+                        </div>
+
+                 </form>
+              </div>
+            </div>
+            <div class="dropdown allorderdropdown ml-xl-3 ml-lg-3 ml-md-0 ml-0 mb-xl-0 mb-lg-0 mb-md-3 mb-3">
+              <button class="btn btn-primary allorderbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                choose Day
+              </button>
+              <div class="dropdown-menu mt-xl-3 mt-lg-3 dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Lifetime</a>
+                <a class="dropdown-item" href="#">Today</a>
+                <a class="dropdown-item" href="#">Yesterday</a>
+                <a class="dropdown-item" href="#">This week</a>
+                <a class="dropdown-item" href="#">Last Week</a>
+                <a class="dropdown-item" href="#">This Month</a>
+                <a class="dropdown-item" href="#">Last Month</a>
+                <a class="dropdown-item" href="#">Custom Range</a>
+              </div>
+            </div>
+
+      </div>
+  </div>
+  <div class="row mx-2 mt-3">
+      <div class="col-xl-8 col-lg-8 col-md-12 col-12 py-xl-0 py-lg-0 py-3">
+          <div class="btn-group d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary btnprimary rounded">All</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">Pending</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">Accepted</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">Shipped</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">Delivered</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">Served</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3" data-toggle="modal" data-target="#Others">Others</button>
+
+            </div>
+            <div class="modal fade" id="Others" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Choose filter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-3 col-12 text-xl-right text-lg-right text-center mb-xl-0 mb-lg-0 mb-2">
+                        <button type="button" class="btn btn-secondary ordermodalbtn">Modified</button>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-12 text-center mb-xl-0 mb-lg-0 mb-2">
+                        <button type="button" class="btn btn-secondary ordermodalbtn">Rejected</button>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-12 text-center mb-xl-0 mb-lg-0 mb-2">
+                        <button type="button" class="btn btn-secondary ordermodalbtn">Cancelled</button>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-12 text-center">
+                        <button type="button" class="btn btn-secondary ordermodalbtn mb-xl-0 mb-lg-0 mb-2">Failed</button>
+                      </div>
+                      <div class="col-xl-3 col-lg-3 col-12 text-xl-left text-lg-left text-center">
+                        <button type="button" class="btn btn-secondary ordermodalbtn">Returned</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-12 col-12 pr-lg-2 pr-xl-2 pr-0 d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column justify-content-xl-end justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-center py-xl-0 py-lg-0 py-3">
+          <div class="dropdown mb-xl-0 mb-lg-0 mb-md-3 mb-3 text-center">
+              <button class="btn dropdown-toggle listdropdownbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-menu mt-xl-3 mt-lg-3" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"><i class="fa fa-bars bar"></i> ListView</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-th-large" aria-hidden="true"></i> Grid View</a>
+              </div>
+            </div>
+            <div class="mb-xl-0 mb-lg-0 mb-md-3 mb-3 ml-xl-3 ml-lg-3 ml-0 text-center">
+              <button type="button" class="btn allorderdownloadbtn" data-toggle="modal" data-target="#Download">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="modal fade" id="Download" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Choose report type</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-xl-6 col-lg-6 col-6 text-center">
+                          <button type="button" class="btn text-center pdfexcelbtn">
+                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> <p class="pt-2">PDf</p>
+                          </button>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-6 text-center">
+                          <button type="button" class="btn text-center pdfexcelbtn">
+                              <i class="fa fa-file-excel-o" aria-hidden="true"></i> <p class="pt-2">XLSX</p>
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ml-xl-3 ml-lg-3 ml-0 text-center">
+              <button type="button" (click)="addOrder()" class="btn allordercreateorderbtn">Create order</button>
+            </div>
+      </div>
+  </div>
+  <div class="row mx-2 mt-5">
+      <div class="col-xl-4 col-lg-4 col-12"></div>
+      <div class="col-xl-4 col-lg-4 col-12 allordercenterimg">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 128" width="216" height="128" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_789"><rect width="216" height="128" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_789)"><g style="display: block;" transform="matrix(1,0,0,1,-0.25,42.75)" opacity="0.9991743619902644"><g opacity="1" transform="matrix(1,0,0,1,108.25,28.25)"><path fill="rgb(236,236,236)" fill-opacity="1" d=" M75,-28 C78.86599731445312,-28 82,-24.865999221801758 82,-21 C82,-17.134000778198242 78.86599731445312,-14 75,-14 C75,-14 97,-14 97,-14 C100.86599731445312,-14 104,-10.866000175476074 104,-7 C104,-3.134000062942505 100.86599731445312,0 97,0 C97,0 78,0 78,0 C74.13400268554688,0 71,3.134000062942505 71,7 C71,10.866000175476074 74.13400268554688,14 78,14 C78,14 84,14 84,14 C87.86599731445312,14 91,17.134000778198242 91,21 C91,24.865999221801758 87.86599731445312,28 84,28 C84,28 32,28 32,28 C31.485000610351562,28 30.982999801635742,27.944000244140625 30.5,27.839000701904297 C30.017000198364258,27.944000244140625 29.514999389648438,28 29,28 C29,28 -62,28 -62,28 C-65.86599731445312,28 -69,24.865999221801758 -69,21 C-69,17.134000778198242 -65.86599731445312,14 -62,14 C-62,14 -101,14 -101,14 C-104.86599731445312,14 -108,10.866000175476074 -108,7 C-108,3.134000062942505 -104.86599731445312,0 -101,0 C-101,0 -61,0 -61,0 C-57.13399887084961,0 -54,-3.134000062942505 -54,-7 C-54,-10.866000175476074 -57.13399887084961,-14 -61,-14 C-61,-14 -86,-14 -86,-14 C-89.86599731445312,-14 -93,-17.134000778198242 -93,-21 C-93,-24.865999221801758 -89.86599731445312,-28 -86,-28 C-86,-28 75,-28 75,-28z M101,14 C104.86599731445312,14 108,17.134000778198242 108,21 C108,24.865999221801758 104.86599731445312,28 101,28 C97.13400268554688,28 94,24.865999221801758 94,21 C94,17.134000778198242 97.13400268554688,14 101,14z"></path></g></g><g transform="matrix(1,-0.0000050222947720612865,0.0000050222947720612865,1,63.499717712402344,8.000225067138672)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,44.79999923706055,55.69300079345703)"><path fill="rgb(247,247,247)" fill-opacity="1" d=" M38.01300048828125,-54.270999908447266 C38.01300048828125,-54.270999908447266 -38.012001037597656,-54.270999908447266 -38.012001037597656,-54.270999908447266 C-41.0099983215332,-54.270999908447266 -43.44300079345703,-51.840999603271484 -43.44300079345703,-48.84199905395508 C-43.44300079345703,-48.84199905395508 -43.44300079345703,48.84000015258789 -43.44300079345703,48.84000015258789 C-43.44300079345703,51.84000015258789 -41.0099983215332,54.270999908447266 -38.012001037597656,54.270999908447266 C-38.012001037597656,54.270999908447266 38.01300048828125,54.270999908447266 38.01300048828125,54.270999908447266 C41.012001037597656,54.270999908447266 43.44300079345703,51.84000015258789 43.44300079345703,48.84000015258789 C43.44300079345703,48.84000015258789 43.44300079345703,-48.84199905395508 43.44300079345703,-48.84199905395508 C43.44300079345703,-51.840999603271484 41.012001037597656,-54.270999908447266 38.01300048828125,-54.270999908447266z"></path></g><g opacity="1" transform="matrix(1,0,0,1,40.2760009765625,51.132999420166016)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M38.91699981689453,-49.775001525878906 C38.91699981689453,-49.775001525878906 -33.48699951171875,-49.775001525878906 -33.48699951171875,-49.775001525878906 C-36.48500061035156,-49.775001525878906 -38.91699981689453,-47.34199905395508 -38.91699981689453,-44.345001220703125 C-38.91699981689453,-44.345001220703125 -38.91699981689453,49.775001525878906 -38.91699981689453,49.775001525878906 C-38.91699981689453,49.775001525878906 33.48699951171875,49.775001525878906 33.48699951171875,49.775001525878906 C36.486000061035156,49.775001525878906 38.91699981689453,47.34400177001953 38.91699981689453,44.345001220703125 C38.91699981689453,44.345001220703125 38.91699981689453,-49.775001525878906 38.91699981689453,-49.775001525878906z"></path></g><g opacity="1" transform="matrix(1,0,0,1,43.79999923706055,55.6609992980957)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M-37.16299819946289,-52.94499969482422 C-39.358001708984375,-52.94499969482422 -41.14500045776367,-51.1150016784668 -41.14500045776367,-48.87200164794922 C-41.14500045776367,-48.87200164794922 -41.14500045776367,48.87200164794922 -41.14500045776367,48.87200164794922 C-41.14500045776367,51.11899948120117 -39.358001708984375,52.94499969482422 -37.16299819946289,52.94499969482422 C-37.16299819946289,52.94499969482422 37.16400146484375,52.94499969482422 37.16400146484375,52.94499969482422 C39.358001708984375,52.94499969482422 41.145999908447266,51.11899948120117 41.145999908447266,48.87200164794922 C41.145999908447266,48.87200164794922 41.145999908447266,-48.87200164794922 41.145999908447266,-48.87200164794922 C41.145999908447266,-51.1150016784668 39.358001708984375,-52.94499969482422 37.16400146484375,-52.94499969482422 C37.16400146484375,-52.94499969482422 -37.16299819946289,-52.94499969482422 -37.16299819946289,-52.94499969482422z M37.16400146484375,55.65999984741211 C37.16400146484375,55.65999984741211 -37.16299819946289,55.65999984741211 -37.16299819946289,55.65999984741211 C-40.82099914550781,55.65999984741211 -43.79999923706055,52.61600112915039 -43.79999923706055,48.87200164794922 C-43.79999923706055,48.87200164794922 -43.79999923706055,-48.87200164794922 -43.79999923706055,-48.87200164794922 C-43.79999923706055,-52.61199951171875 -40.82099914550781,-55.65999984741211 -37.16299819946289,-55.65999984741211 C-37.16299819946289,-55.65999984741211 37.16400146484375,-55.65999984741211 37.16400146484375,-55.65999984741211 C40.821998596191406,-55.65999984741211 43.79999923706055,-52.61199951171875 43.79999923706055,-48.87200164794922 C43.79999923706055,-48.87200164794922 43.79999923706055,48.87200164794922 43.79999923706055,48.87200164794922 C43.79999923706055,52.61600112915039 40.821998596191406,55.65999984741211 37.16400146484375,55.65999984741211z"></path></g><g opacity="1" transform="matrix(1,0,0,1,17.659000396728516,23.319000244140625)"><path fill="rgb(247,247,247)" fill-opacity="1" d=" M-1.784999966621399,5.439000129699707 C-1.784999966621399,5.439000129699707 1.8350000381469727,5.421000003814697 1.8350000381469727,5.421000003814697 C3.8329999446868896,5.4120001792907715 5.448999881744385,3.7860000133514404 5.438000202178955,1.784999966621399 C5.438000202178955,1.784999966621399 5.419000148773193,-1.8350000381469727 5.419000148773193,-1.8350000381469727 C5.4120001792907715,-3.8329999446868896 3.7839999198913574,-5.447999954223633 1.7860000133514404,-5.439000129699707 C1.7860000133514404,-5.439000129699707 -1.8350000381469727,-5.421999931335449 -1.8350000381469727,-5.421999931335449 C-3.8350000381469727,-5.413000106811523 -5.447999954223633,-3.7829999923706055 -5.439000129699707,-1.7829999923706055 C-5.439000129699707,-1.7829999923706055 -5.422999858856201,1.8370000123977661 -5.422999858856201,1.8370000123977661 C-5.413000106811523,3.8350000381469727 -3.7850000858306885,5.447999954223633 -1.784999966621399,5.439000129699707z"></path></g><g opacity="1" transform="matrix(1,0,0,1,17.658000946044922,23.31999969482422)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M1.8049999475479126,-4.079999923706055 C1.8049999475479126,-4.079999923706055 1.7920000553131104,-4.079999923706055 1.7920000553131104,-4.079999923706055 C1.7920000553131104,-4.079999923706055 -1.8309999704360962,-4.065999984741211 -1.8309999704360962,-4.065999984741211 C-3.075000047683716,-4.058000087738037 -4.085999965667725,-3.0380001068115234 -4.080999851226807,-1.7890000343322754 C-4.080999851226807,-1.7890000343322754 -4.064000129699707,1.8300000429153442 -4.064000129699707,1.8300000429153442 C-4.059999942779541,2.434000015258789 -3.822000026702881,3.000999927520752 -3.3929998874664307,3.4260001182556152 C-2.9639999866485596,3.8540000915527344 -2.381999969482422,4.10699987411499 -1.7899999618530273,4.079999923706055 C-1.7899999618530273,4.079999923706055 -1.7879999876022339,4.079999923706055 -1.7879999876022339,4.079999923706055 C-1.7879999876022339,4.079999923706055 1.8329999446868896,4.065000057220459 1.8329999446868896,4.065000057220459 C3.078000068664551,4.058000087738037 4.0879998207092285,3.0390000343322754 4.083000183105469,1.7899999618530273 C4.083000183105469,1.7899999618530273 4.064000129699707,-1.8279999494552612 4.064000129699707,-1.8279999494552612 C4.058000087738037,-2.433000087738037 3.8239998817443848,-3.000999927520752 3.3949999809265137,-3.427000045776367 C2.9690001010894775,-3.8480000495910645 2.4049999713897705,-4.079999923706055 1.8049999475479126,-4.079999923706055z M-1.8029999732971191,6.795000076293945 C-3.124000072479248,6.795000076293945 -4.364999771118164,6.285999774932861 -5.304999828338623,5.355999946594238 C-6.248000144958496,4.420000076293945 -6.77400016784668,3.1730000972747803 -6.7789998054504395,1.840999960899353 C-6.7789998054504395,1.840999960899353 -6.796000003814697,-1.777999997138977 -6.796000003814697,-1.777999997138977 C-6.809000015258789,-4.519999980926514 -4.584000110626221,-6.765999794006348 -1.8420000076293945,-6.781000137329102 C-1.8420000076293945,-6.781000137329102 1.7790000438690186,-6.795000076293945 1.7790000438690186,-6.795000076293945 C3.0769999027252197,-6.769999980926514 4.359000205993652,-6.291999816894531 5.302999973297119,-5.355999946594238 C6.25,-4.419000148773193 6.7729997634887695,-3.1710000038146973 6.7789998054504395,-1.843000054359436 C6.7789998054504395,-1.843000054359436 6.797999858856201,1.7769999504089355 6.797999858856201,1.7769999504089355 C6.809999942779541,4.5229997634887695 4.586999893188477,6.765999794006348 1.8420000076293945,6.78000020980835 C1.8420000076293945,6.78000020980835 -1.7769999504089355,6.795000076293945 -1.7769999504089355,6.795000076293945 C-1.7769999504089355,6.795000076293945 -1.8029999732971191,6.795000076293945 -1.8029999732971191,6.795000076293945z"></path></g><g opacity="1" transform="matrix(1,0,0,1,17.659000396728516,45.042999267578125)"><path fill="rgb(247,247,247)" fill-opacity="1" d=" M-1.784999966621399,5.438000202178955 C-1.784999966621399,5.438000202178955 1.8350000381469727,5.422999858856201 1.8350000381469727,5.422999858856201 C3.8329999446868896,5.4120001792907715 5.448999881744385,3.7839999198913574 5.438000202178955,1.7829999923706055 C5.438000202178955,1.7829999923706055 5.419000148773193,-1.8370000123977661 5.419000148773193,-1.8370000123977661 C5.4120001792907715,-3.8350000381469727 3.7839999198913574,-5.449999809265137 1.7860000133514404,-5.439000129699707 C1.7860000133514404,-5.439000129699707 -1.8350000381469727,-5.422999858856201 -1.8350000381469727,-5.422999858856201 C-3.8350000381469727,-5.4120001792907715 -5.447999954223633,-3.7850000858306885 -5.439000129699707,-1.784000039100647 C-5.439000129699707,-1.784000039100647 -5.422999858856201,1.8370000123977661 -5.422999858856201,1.8370000123977661 C-5.413000106811523,3.8350000381469727 -3.7850000858306885,5.448999881744385 -1.784999966621399,5.438000202178955z"></path></g><g opacity="1" transform="matrix(1,0,0,1,17.65399932861328,45.04399871826172)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M1.8049999475479126,-4.081999778747559 C1.8049999475479126,-4.081999778747559 1.7920000553131104,-4.081999778747559 1.7920000553131104,-4.081999778747559 C1.7920000553131104,-4.081999778747559 -1.8240000009536743,-4.064000129699707 -1.8240000009536743,-4.064000129699707 C-2.428999900817871,-4.061999797821045 -2.994999885559082,-3.822999954223633 -3.4230000972747803,-3.3940000534057617 C-3.8480000495910645,-2.9649999141693115 -4.083000183105469,-2.3949999809265137 -4.078000068664551,-1.7920000553131104 C-4.078000068664551,-1.7920000553131104 -4.059999942779541,1.8279999494552612 -4.059999942779541,1.8279999494552612 C-4.056000232696533,2.433000087738037 -3.819000005722046,2.997999906539917 -3.390000104904175,3.424999952316284 C-2.9630000591278076,3.8480000495910645 -2.3959999084472656,4.081999778747559 -1.7970000505447388,4.081999778747559 C-1.7970000505447388,4.081999778747559 -1.7860000133514404,4.081999778747559 -1.7860000133514404,4.081999778747559 C-1.7860000133514404,4.081999778747559 1.8339999914169312,4.064000129699707 1.8339999914169312,4.064000129699707 C2.438999891281128,4.059999942779541 3.005000114440918,3.822999954223633 3.428999900817871,3.3940000534057617 C3.8559999465942383,2.9649999141693115 4.089000225067139,2.3929998874664307 4.085999965667725,1.7890000343322754 C4.085999965667725,1.7890000343322754 4.067999839782715,-1.8300000429153442 4.067999839782715,-1.8300000429153442 C4.061999797821045,-2.434000015258789 3.8269999027252197,-3.000999927520752 3.3980000019073486,-3.4260001182556152 C2.9730000495910645,-3.8499999046325684 2.4059998989105225,-4.081999778747559 1.8049999475479126,-4.081999778747559z M-1.7970000505447388,6.796999931335449 C-3.118000030517578,6.796999931335449 -4.360000133514404,6.2870001792907715 -5.301000118255615,5.354000091552734 C-6.24399995803833,4.416999816894531 -6.769000053405762,3.1710000038146973 -6.775000095367432,1.8389999866485596 C-6.775000095367432,1.8389999866485596 -6.793000221252441,-1.7790000438690186 -6.793000221252441,-1.7790000438690186 C-6.806000232696533,-4.5229997634887695 -4.580999851226807,-6.765999794006348 -1.8370000123977661,-6.7789998054504395 C-1.8370000123977661,-6.7789998054504395 1.781000018119812,-6.796999931335449 1.781000018119812,-6.796999931335449 C1.781000018119812,-6.796999931335449 1.8049999475479126,-6.796999931335449 1.8049999475479126,-6.796999931335449 C3.125999927520752,-6.796999931335449 4.369999885559082,-6.285999774932861 5.308000087738037,-5.355999946594238 C6.254000186920166,-4.420000076293945 6.7769999504089355,-3.1730000972747803 6.7829999923706055,-1.843000054359436 C6.7829999923706055,-1.843000054359436 6.801000118255615,1.7740000486373901 6.801000118255615,1.7740000486373901 C6.806000232696533,3.1080000400543213 6.294000148773193,4.359000205993652 5.360000133514404,5.304999828338623 C4.421999931335449,6.249000072479248 3.177000045776367,6.77400016784668 1.8450000286102295,6.7789998054504395 C1.8450000286102295,6.7789998054504395 -1.774999976158142,6.796999931335449 -1.774999976158142,6.796999931335449 C-1.774999976158142,6.795000076293945 -1.7860000133514404,6.796999931335449 -1.7970000505447388,6.796999931335449z"></path></g><g opacity="1" transform="matrix(1,0,0,1,17.659000396728516,66.76699829101562)"><path fill="rgb(247,247,247)" fill-opacity="1" d=" M-1.784999966621399,5.438000202178955 C-1.784999966621399,5.438000202178955 1.8350000381469727,5.421999931335449 1.8350000381469727,5.421999931335449 C3.8329999446868896,5.410999774932861 5.448999881744385,3.7829999923706055 5.438000202178955,1.7829999923706055 C5.438000202178955,1.7829999923706055 5.419000148773193,-1.8370000123977661 5.419000148773193,-1.8370000123977661 C5.4120001792907715,-3.8350000381469727 3.7839999198913574,-5.447999954223633 1.7860000133514404,-5.439000129699707 C1.7860000133514404,-5.439000129699707 -1.8350000381469727,-5.423999786376953 -1.8350000381469727,-5.423999786376953 C-3.8350000381469727,-5.413000106811523 -5.447999954223633,-3.7860000133514404 -5.439000129699707,-1.784999966621399 C-5.439000129699707,-1.784999966621399 -5.422999858856201,1.8359999656677246 -5.422999858856201,1.8359999656677246 C-5.413000106811523,3.8340001106262207 -3.7850000858306885,5.448999881744385 -1.784999966621399,5.438000202178955z"></path></g><g opacity="1" transform="matrix(1,0,0,1,17.658000946044922,66.76699829101562)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M1.8009999990463257,-4.081999778747559 C1.8009999990463257,-4.081999778747559 1.7879999876022339,-4.081999778747559 1.7879999876022339,-4.081999778747559 C1.7879999876022339,-4.081999778747559 -1.8279999494552612,-4.064000129699707 -1.8279999494552612,-4.064000129699707 C-2.433000087738037,-4.059999942779541 -2.999000072479248,-3.822999954223633 -3.427000045776367,-3.3940000534057617 C-3.8519999980926514,-2.9649999141693115 -4.086999893188477,-2.3929998874664307 -4.081999778747559,-1.7879999876022339 C-4.081999778747559,-1.7879999876022339 -4.064000129699707,1.8300000429153442 -4.064000129699707,1.8300000429153442 C-4.059999942779541,2.434999942779541 -3.822999954223633,3.000999927520752 -3.3940000534057617,3.424999952316284 C-2.9649999141693115,3.8480000495910645 -2.3970000743865967,4.163000106811523 -1.7899999618530273,4.081999778747559 C-1.7899999618530273,4.081999778747559 1.8300000429153442,4.064000129699707 1.8300000429153442,4.064000129699707 C2.434999942779541,4.059999942779541 3.000999927520752,3.822999954223633 3.424999952316284,3.3940000534057617 C3.8519999980926514,2.9649999141693115 4.085000038146973,2.3949999809265137 4.081999778747559,1.7899999618530273 C4.081999778747559,1.7899999618530273 4.064000129699707,-1.8279999494552612 4.064000129699707,-1.8279999494552612 C4.058000087738037,-2.434999942779541 3.822999954223633,-2.999000072479248 3.3940000534057617,-3.4260001182556152 C2.9690001010894775,-3.8480000495910645 2.4019999504089355,-4.081999778747559 1.8009999990463257,-4.081999778747559z M-1.8009999990463257,6.796999931335449 C-3.121999979019165,6.796999931335449 -4.363999843597412,6.284999847412109 -5.304999828338623,5.355999946594238 C-6.248000144958496,4.419000148773193 -6.7729997634887695,3.1730000972747803 -6.7789998054504395,1.840999960899353 C-6.7789998054504395,1.840999960899353 -6.796999931335449,-1.7769999504089355 -6.796999931335449,-1.7769999504089355 C-6.802000045776367,-3.1080000400543213 -6.291999816894531,-4.359000205993652 -5.354000091552734,-5.304999828338623 C-4.418000221252441,-6.248000144958496 -3.1710000038146973,-6.7729997634887695 -1.840999960899353,-6.7789998054504395 C-1.840999960899353,-6.7789998054504395 1.777999997138977,-6.796999931335449 1.777999997138977,-6.796999931335449 C1.777999997138977,-6.796999931335449 1.8009999990463257,-6.796999931335449 1.8009999990463257,-6.796999931335449 C4.533999919891357,-6.796999931335449 6.765999794006348,-4.578000068664551 6.7789998054504395,-1.840999960899353 C6.7789998054504395,-1.840999960899353 6.796999931335449,1.777999997138977 6.796999931335449,1.777999997138977 C6.802000045776367,3.109999895095825 6.289999961853027,4.361000061035156 5.355999946594238,5.304999828338623 C4.418000221252441,6.25 3.1730000972747803,6.7729997634887695 1.840999960899353,6.7789998054504395 C1.840999960899353,6.7789998054504395 -1.7790000438690186,6.796999931335449 -1.7790000438690186,6.796999931335449 C-1.7790000438690186,6.796999931335449 -1.8009999990463257,6.796999931335449 -1.8009999990463257,6.796999931335449z"></path></g><g opacity="1" transform="matrix(1,0,0,1,17.659000396728516,88.48999786376953)"><path fill="rgb(247,247,247)" fill-opacity="1" d=" M-1.784999966621399,5.439000129699707 C-1.784999966621399,5.439000129699707 1.8350000381469727,5.421999931335449 1.8350000381469727,5.421999931335449 C3.8329999446868896,5.413000106811523 5.448999881744385,3.7839999198913574 5.438000202178955,1.784000039100647 C5.438000202178955,1.784000039100647 5.419000148773193,-1.8380000591278076 5.419000148773193,-1.8380000591278076 C5.4120001792907715,-3.8359999656677246 3.7839999198913574,-5.447999954223633 1.7860000133514404,-5.439000129699707 C1.7860000133514404,-5.439000129699707 -1.8350000381469727,-5.421999931335449 -1.8350000381469727,-5.421999931335449 C-3.8350000381469727,-5.413000106811523 -5.447999954223633,-3.7850000858306885 -5.439000129699707,-1.784999966621399 C-5.439000129699707,-1.784999966621399 -5.422999858856201,1.8359999656677246 -5.422999858856201,1.8359999656677246 C-5.413000106811523,3.8340001106262207 -3.7850000858306885,5.447999954223633 -1.784999966621399,5.439000129699707z"></path></g><g opacity="1" transform="matrix(1,0,0,1,17.65399932861328,88.48999786376953)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M1.809000015258789,-4.079999923706055 C1.809000015258789,-4.079999923706055 1.7960000038146973,-4.079999923706055 1.7960000038146973,-4.079999923706055 C1.7960000038146973,-4.079999923706055 -1.8279999494552612,-4.065999984741211 -1.8279999494552612,-4.065999984741211 C-3.071000099182129,-4.058000087738037 -4.083000183105469,-3.0380001068115234 -4.078000068664551,-1.7890000343322754 C-4.078000068664551,-1.7890000343322754 -4.059999942779541,1.8300000429153442 -4.059999942779541,1.8300000429153442 C-4.056000232696533,2.434000015258789 -3.819000005722046,3.000999927520752 -3.390000104904175,3.424999952316284 C-2.9630000591278076,3.8459999561309814 -2.3959999084472656,4.079999923706055 -1.7970000505447388,4.079999923706055 C-1.7970000505447388,4.079999923706055 -1.7860000133514404,4.079999923706055 -1.7860000133514404,4.079999923706055 C-1.7860000133514404,4.079999923706055 1.8339999914169312,4.063000202178955 1.8339999914169312,4.063000202178955 C2.438999891281128,4.059999942779541 3.005000114440918,3.822999954223633 3.430999994277954,3.3940000534057617 C3.8559999465942383,2.9649999141693115 4.089000225067139,2.3949999809265137 4.085999965667725,1.7899999618530273 C4.085999965667725,1.7899999618530273 4.067999839782715,-1.8279999494552612 4.067999839782715,-1.8279999494552612 C4.061999797821045,-2.433000087738037 3.8269999027252197,-3.000999927520752 3.3980000019073486,-3.427000045776367 C2.9730000495910645,-3.8480000495910645 2.4079999923706055,-4.079999923706055 1.809000015258789,-4.079999923706055z M-1.7970000505447388,6.795000076293945 C-3.118000030517578,6.795000076293945 -4.360000133514404,6.285999774932861 -5.301000118255615,5.355999946594238 C-6.24399995803833,4.418000221252441 -6.769000053405762,3.1730000972747803 -6.775000095367432,1.840999960899353 C-6.775000095367432,1.840999960899353 -6.793000221252441,-1.777999997138977 -6.793000221252441,-1.777999997138977 C-6.806000232696533,-4.521999835968018 -4.580999851226807,-6.764999866485596 -1.8389999866485596,-6.781000137329102 C-1.8389999866485596,-6.781000137329102 1.7829999923706055,-6.795000076293945 1.7829999923706055,-6.795000076293945 C3.0810000896453857,-6.758999824523926 4.36299991607666,-6.289999961853027 5.308000087738037,-5.355999946594238 C6.254000186920166,-4.419000148773193 6.7769999504089355,-3.1710000038146973 6.7829999923706055,-1.840999960899353 C6.7829999923706055,-1.840999960899353 6.801000118255615,1.7769999504089355 6.801000118255615,1.7769999504089355 C6.806000232696533,3.1080000400543213 6.296000003814697,4.359000205993652 5.360000133514404,5.304999828338623 C4.422999858856201,6.25 3.177000045776367,6.7729997634887695 1.847000002861023,6.7789998054504395 C1.847000002861023,6.7789998054504395 -1.7730000019073486,6.795000076293945 -1.7730000019073486,6.795000076293945 C-1.7730000019073486,6.793000221252441 -1.7860000133514404,6.795000076293945 -1.7970000505447388,6.795000076293945z"></path></g><g opacity="1" transform="matrix(1,0,0,1,47.2760009765625,19.239999771118164)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M2.9560000896453857,1.3569999933242798 C2.9560000896453857,1.3569999933242798 -16.95599937438965,1.3569999933242798 -16.95599937438965,1.3569999933242798 C-17.707000732421875,1.3569999933242798 -18.312999725341797,0.7490000128746033 -18.312999725341797,-0.0010000000474974513 C-18.312999725341797,-0.75 -17.707000732421875,-1.3569999933242798 -16.95599937438965,-1.3569999933242798 C-16.95599937438965,-1.3569999933242798 16.95599937438965,-1.3569999933242798 16.95599937438965,-1.3569999933242798 C17.704999923706055,-1.3569999933242798 18.312999725341797,-0.75 18.312999725341797,-0.0010000000474974513 C18.312999725341797,0.7490000128746033 17.704999923706055,1.3569999933242798 16.95599937438965,1.3569999933242798"></path></g><g opacity="1" transform="matrix(1,0,0,1,35.750999450683594,27.385000228881836)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M5.429999828338623,1.3569999933242798 C5.429999828338623,1.3569999933242798 -5.431000232696533,1.3569999933242798 -5.431000232696533,1.3569999933242798 C-6.182000160217285,1.3569999933242798 -6.788000106811523,0.75 -6.788000106811523,0.0010000000474974513 C-6.788000106811523,-0.7490000128746033 -6.182000160217285,-1.3569999933242798 -5.431000232696533,-1.3569999933242798 C-5.431000232696533,-1.3569999933242798 5.429999828338623,-1.3569999933242798 5.429999828338623,-1.3569999933242798 C6.178999900817871,-1.3569999933242798 6.788000106811523,-0.7490000128746033 6.788000106811523,0.0010000000474974513 C6.788000106811523,0.75 6.178999900817871,1.3569999933242798 5.429999828338623,1.3569999933242798z"></path></g><g opacity="1" transform="matrix(1,0,0,1,33.7140007019043,40.9630012512207)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M4.750999927520752,1.3569999933242798 C4.750999927520752,1.3569999933242798 -3.3949999809265137,1.3569999933242798 -3.3949999809265137,1.3569999933242798 C-4.145999908447266,1.3569999933242798 -4.750999927520752,0.7490000128746033 -4.750999927520752,-0.0010000000474974513 C-4.750999927520752,-0.75 -4.145999908447266,-1.3569999933242798 -3.3949999809265137,-1.3569999933242798 C-3.3949999809265137,-1.3569999933242798 2.750999927520752,-1.3569999933242798 2.750999927520752,-1.3569999933242798 C3.5,-1.3569999933242798 4.109000205993652,-0.75 4.109000205993652,-0.0010000000474974513 C4.109000205993652,0.7490000128746033 3.5,1.3569999933242798 2.750999927520752,1.3569999933242798"></path></g><g opacity="1" transform="matrix(1,0,0,1,38.46500015258789,49.108001708984375)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M8.145000457763672,1.3569999933242798 C8.145000457763672,1.3569999933242798 -8.145000457763672,1.3569999933242798 -8.145000457763672,1.3569999933242798 C-8.895999908447266,1.3569999933242798 -9.503000259399414,0.7490000128746033 -9.503000259399414,-0.0010000000474974513 C-9.503000259399414,-0.75 -8.895999908447266,-1.3569999933242798 -8.145000457763672,-1.3569999933242798 C-8.145000457763672,-1.3569999933242798 8.145000457763672,-1.3569999933242798 8.145000457763672,-1.3569999933242798 C8.894000053405762,-1.3569999933242798 9.503000259399414,-0.75 9.503000259399414,-0.0010000000474974513 C9.503000259399414,0.7490000128746033 8.894000053405762,1.3569999933242798 8.145000457763672,1.3569999933242798z"></path></g><g opacity="1" transform="matrix(1,0,0,1,40.275001525878906,62.6870002746582)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M9.954000473022461,1.3569999933242798 C9.954000473022461,1.3569999933242798 -9.954000473022461,1.3569999933242798 -9.954000473022461,1.3569999933242798 C-10.706000328063965,1.3569999933242798 -11.312000274658203,0.746999979019165 -11.312000274658203,-0.0010000000474974513 C-11.312000274658203,-0.75 -10.706000328063965,-1.3569999933242798 -9.954000473022461,-1.3569999933242798 C-9.954000473022461,-1.3569999933242798 9.954000473022461,-1.3569999933242798 9.954000473022461,-1.3569999933242798 C10.70300006866455,-1.3569999933242798 11.312000274658203,-0.75 11.312000274658203,-0.0010000000474974513 C11.312000274658203,0.746999979019165 10.70300006866455,1.3569999933242798 9.954000473022461,1.3569999933242798z"></path></g><g opacity="1" transform="matrix(1,0,0,1,36.65399932861328,70.83300018310547)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M6.335000038146973,1.3569999933242798 C6.335000038146973,1.3569999933242798 -6.335000038146973,1.3569999933242798 -6.335000038146973,1.3569999933242798 C-7.085999965667725,1.3569999933242798 -7.692999839782715,0.746999979019165 -7.692999839782715,0 C-7.692999839782715,-0.75 -7.085999965667725,-1.3569999933242798 -6.335000038146973,-1.3569999933242798 C-6.335000038146973,-1.3569999933242798 6.335000038146973,-1.3569999933242798 6.335000038146973,-1.3569999933242798 C7.084000110626221,-1.3569999933242798 7.692999839782715,-0.75 7.692999839782715,0 C7.692999839782715,0.746999979019165 7.084000110626221,1.3569999933242798 6.335000038146973,1.3569999933242798z"></path></g><g opacity="1" transform="matrix(1,0,0,1,44.16400146484375,84.41000366210938)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M5.8429999351501465,1.3569999933242798 C5.8429999351501465,1.3569999933242798 -13.843999862670898,1.3569999933242798 -13.843999862670898,1.3569999933242798 C-14.595000267028809,1.3569999933242798 -15.201000213623047,0.7490000128746033 -15.201000213623047,-0.0010000000474974513 C-15.201000213623047,-0.75 -14.595000267028809,-1.3569999933242798 -13.843999862670898,-1.3569999933242798 C-13.843999862670898,-1.3569999933242798 13.843000411987305,-1.3569999933242798 13.843000411987305,-1.3569999933242798 C14.59000015258789,-1.3569999933242798 15.201000213623047,-0.75 15.201000213623047,-0.0010000000474974513 C15.201000213623047,0.7490000128746033 14.59000015258789,1.3569999933242798 13.843000411987305,1.3569999933242798"></path></g><g opacity="1" transform="matrix(1,0,0,1,36.65399932861328,92.55599975585938)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M6.335000038146973,1.3569999933242798 C6.335000038146973,1.3569999933242798 -6.335000038146973,1.3569999933242798 -6.335000038146973,1.3569999933242798 C-7.085999965667725,1.3569999933242798 -7.692999839782715,0.7490000128746033 -7.692999839782715,0 C-7.692999839782715,-0.75 -7.085999965667725,-1.3569999933242798 -6.335000038146973,-1.3569999933242798 C-6.335000038146973,-1.3569999933242798 6.335000038146973,-1.3569999933242798 6.335000038146973,-1.3569999933242798 C7.084000110626221,-1.3569999933242798 7.692999839782715,-0.75 7.692999839782715,0 C7.692999839782715,0.7490000128746033 7.084000110626221,1.3569999933242798 6.335000038146973,1.3569999933242798z"></path></g></g><g transform="matrix(0,1,-1,0,180.75,28.375)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,5.585999965667725,5.822000026702881)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M3.619999885559082,1.3569999933242798 C3.619999885559082,1.3569999933242798 -3.619999885559082,1.3569999933242798 -3.619999885559082,1.3569999933242798 C-4.369999885559082,1.3569999933242798 -4.978000164031982,0.7490000128746033 -4.978000164031982,-0.0010000000474974513 C-4.978000164031982,-0.7519999742507935 -4.369999885559082,-1.3569999933242798 -3.619999885559082,-1.3569999933242798 C-3.619999885559082,-1.3569999933242798 3.619999885559082,-1.3569999933242798 3.619999885559082,-1.3569999933242798 C4.368000030517578,-1.3569999933242798 4.978000164031982,-0.7519999742507935 4.978000164031982,-0.0010000000474974513 C4.978000164031982,0.7490000128746033 4.368000030517578,1.3569999933242798 3.619999885559082,1.3569999933242798z"></path></g><g opacity="1" transform="matrix(1,0,0,1,5.585999965667725,5.822000026702881)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M0,4.978000164031982 C-0.7490000128746033,4.978000164031982 -1.3580000400543213,4.369999885559082 -1.3580000400543213,3.619999885559082 C-1.3580000400543213,3.619999885559082 -1.3580000400543213,-3.619999885559082 -1.3580000400543213,-3.619999885559082 C-1.3580000400543213,-4.370999813079834 -0.7490000128746033,-4.978000164031982 0,-4.978000164031982 C0.7480000257492065,-4.978000164031982 1.3580000400543213,-4.370999813079834 1.3580000400543213,-3.619999885559082 C1.3580000400543213,-3.619999885559082 1.3580000400543213,3.619999885559082 1.3580000400543213,3.619999885559082 C1.3580000400543213,4.369999885559082 0.7480000257492065,4.978000164031982 0,4.978000164031982z"></path></g></g><g transform="matrix(0,1,-1,0,168.71900939941406,17.906999588012695)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,5.914000034332275,5.14900016784668)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M3.619999885559082,1.3569999933242798 C3.619999885559082,1.3569999933242798 -3.619999885559082,1.3569999933242798 -3.619999885559082,1.3569999933242798 C-4.372000217437744,1.3569999933242798 -4.978000164031982,0.7490000128746033 -4.978000164031982,-0.0010000000474974513 C-4.978000164031982,-0.75 -4.372000217437744,-1.3569999933242798 -3.619999885559082,-1.3569999933242798 C-3.619999885559082,-1.3569999933242798 3.619999885559082,-1.3569999933242798 3.619999885559082,-1.3569999933242798 C4.36899995803833,-1.3569999933242798 4.978000164031982,-0.75 4.978000164031982,-0.0010000000474974513 C4.978000164031982,0.7490000128746033 4.36899995803833,1.3569999933242798 3.619999885559082,1.3569999933242798z"></path></g><g opacity="1" transform="matrix(1,0,0,1,5.914000034332275,5.14900016784668)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M0,4.978000164031982 C-0.7509999871253967,4.978000164031982 -1.3580000400543213,4.369999885559082 -1.3580000400543213,3.619999885559082 C-1.3580000400543213,3.619999885559082 -1.3580000400543213,-3.619999885559082 -1.3580000400543213,-3.619999885559082 C-1.3580000400543213,-4.36899995803833 -0.7509999871253967,-4.978000164031982 0,-4.978000164031982 C0.7490000128746033,-4.978000164031982 1.3580000400543213,-4.36899995803833 1.3580000400543213,-3.619999885559082 C1.3580000400543213,-3.619999885559082 1.3580000400543213,3.619999885559082 1.3580000400543213,3.619999885559082 C1.3580000400543213,4.369999885559082 0.7490000128746033,4.978000164031982 0,4.978000164031982z"></path></g></g><g transform="matrix(0,1,-1,0,185.5,9.5)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,5.585999965667725,5.045000076293945)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M3.619999885559082,1.3569999933242798 C3.619999885559082,1.3569999933242798 -3.619999885559082,1.3569999933242798 -3.619999885559082,1.3569999933242798 C-4.369999885559082,1.3569999933242798 -4.978000164031982,0.7509999871253967 -4.978000164031982,-0.0010000000474974513 C-4.978000164031982,-0.7480000257492065 -4.369999885559082,-1.3569999933242798 -3.619999885559082,-1.3569999933242798 C-3.619999885559082,-1.3569999933242798 3.619999885559082,-1.3569999933242798 3.619999885559082,-1.3569999933242798 C4.368000030517578,-1.3569999933242798 4.978000164031982,-0.7480000257492065 4.978000164031982,-0.0010000000474974513 C4.978000164031982,0.7509999871253967 4.368000030517578,1.3569999933242798 3.619999885559082,1.3569999933242798z"></path></g><g opacity="1" transform="matrix(1,0,0,1,5.585999965667725,5.045000076293945)"><path fill="rgb(217,217,217)" fill-opacity="1" d=" M0,4.978000164031982 C-0.7490000128746033,4.978000164031982 -1.3580000400543213,4.372000217437744 -1.3580000400543213,3.619999885559082 C-1.3580000400543213,3.619999885559082 -1.3580000400543213,-3.619999885559082 -1.3580000400543213,-3.619999885559082 C-1.3580000400543213,-4.368000030517578 -0.7490000128746033,-4.978000164031982 0,-4.978000164031982 C0.7480000257492065,-4.978000164031982 1.3580000400543213,-4.368000030517578 1.3580000400543213,-3.619999885559082 C1.3580000400543213,-3.619999885559082 1.3580000400543213,3.619999885559082 1.3580000400543213,3.619999885559082 C1.3580000400543213,4.372000217437744 0.7480000257492065,4.978000164031982 0,4.978000164031982z"></path></g></g></g></svg>
+      </div>
+      <div class="col-4 col-lg-4 col-12"></div>
+  </div>
+  <div class="row mx-2 mt-3">
+      <div class="col-12 text-center">
+          <h5 class="allordersnoorderfound">No orders found</h5>
+      </div>
+  </div>
+  <div class="row mx-2">
+      <div class="col-12 text-center">
+          <p class="allorderstorelink">Share your store's link with your customers on social media to get more orders.</p>
+      </div>
+  </div>
+  <div class="row mx-2 mt-xl-3 mt-lg-3 mt-0 py-xl-0 py-lg-0 py-3">
+      <div class="col-12 text-center d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column justify-content-xl-center">
+          <div class="mr-xl-3 mr-lg-3 mr-0 mb-xl-0 mb-lg-0 mb-2">
+              <button class="btn socialbtn">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="share-icon wa-share"><title>Share via WhatsApp</title><rect width="32" height="32" rx="4" fill="#49C759"></rect><path d="M16.0127 6C10.5062 6 6.02349 10.4511 6.02149 15.9236C6.02049 17.6729 6.48152 19.3806 7.3556 20.8854L6 25.8783L11.2329 24.6495C12.6921 25.4407 14.3347 25.856 16.0068 25.8569H16.0107C21.5163 25.8569 25.997 21.4048 26 15.9333C26.002 13.2806 24.964 10.7864 23.0778 8.90992C21.1917 7.0344 18.685 6.00099 16.0127 6ZM16.0107 7.98783C18.1469 7.98882 20.1545 8.81655 21.6636 10.3154C23.1728 11.8162 24.0018 13.8104 23.9998 15.9314C23.9978 20.3086 20.4152 23.8691 16.0088 23.8691C14.6757 23.8681 13.3551 23.5355 12.192 22.9043L11.5181 22.5394L10.7739 22.7141L8.80496 23.1761L9.28548 21.4018L9.50229 20.6059L9.08819 19.8915C8.39012 18.6909 8.02068 17.3181 8.02168 15.9236C8.02368 11.5484 11.6073 7.98783 16.0107 7.98783ZM12.4772 11.3423C12.3102 11.3423 12.0401 11.4044 11.8111 11.6529C11.5821 11.9004 10.936 12.4998 10.936 13.7203C10.936 14.9408 11.8306 16.1206 11.9557 16.2866C12.0797 16.4516 13.6825 19.0354 16.2197 20.0293C18.328 20.8553 18.7561 20.6923 19.2142 20.6505C19.6722 20.6098 20.6919 20.0517 20.8999 19.4722C21.1079 18.8928 21.1084 18.3943 21.0464 18.2919C20.9844 18.1886 20.8179 18.1269 20.5678 18.0027C20.3188 17.8785 19.0916 17.2796 18.8626 17.1971C18.6336 17.1146 18.466 17.0728 18.3 17.3213C18.134 17.5698 17.6569 18.1269 17.5109 18.2919C17.3649 18.4579 17.2198 18.4802 16.9698 18.356C16.7198 18.2308 15.9159 17.9681 14.9618 17.1233C14.2197 16.4663 13.719 15.6557 13.573 15.4073C13.428 15.1598 13.5593 15.0238 13.6843 14.9006C13.7964 14.7893 13.9324 14.6109 14.0574 14.4657C14.1814 14.3206 14.2244 14.2173 14.3075 14.0523C14.3905 13.8873 14.348 13.7417 14.286 13.6174C14.224 13.4932 13.7384 12.2681 13.5164 11.7771C13.3293 11.3647 13.1318 11.3551 12.9538 11.3481C12.8088 11.3422 12.6432 11.3423 12.4772 11.3423Z" fill="white"></path></svg>
+              </button>
+          </div>
+          <div class="mb-xl-0 mb-lg-0 mb-2">
+              <button class="btn socialbtn">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="share-icon fb-share"><title>Share via Facebook</title><rect width="32" height="32" rx="4" fill="#1A77F2"></rect><path d="M18.7639 10.6171H21.45V7H18.2924V7.01304C14.4664 7.13657 13.6823 9.09711 13.6131 11.1563H13.6053V12.9625H11V16.5048H13.6053V26H17.5316V16.5048H20.7478L21.3692 12.9625H17.5329V11.8712C17.5329 11.1753 18.0408 10.6171 18.7639 10.6171Z" fill="white"></path></svg>
+          </button>
+          </div>
+          <div class="ml-xl-3 ml-lg-3 ml-0">
+              <button class="btn socialbtn">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="share-icon tw-share"><title>Share via Twitter</title><rect width="32" height="32" rx="4" fill="#1EA1F1"></rect><path d="M23.9532 12.2172C23.9612 12.4019 23.9652 12.5851 23.9652 12.7683C23.9652 18.4154 19.8383 24.9231 12.2898 24.9231C9.97093 24.9231 7.81479 24.2165 6 23.0033C6.32135 23.0435 6.64804 23.0616 6.98007 23.0616C8.90419 23.0616 10.6723 22.38 12.0751 21.232C10.279 21.1973 8.76285 19.9618 8.24148 18.2655C8.49217 18.3154 8.74952 18.3418 9.01353 18.3418C9.38823 18.3418 9.75225 18.2891 10.0949 18.1919C8.21748 17.8004 6.80272 16.0735 6.80272 14.0038C6.80272 13.9858 6.80272 13.9677 6.80272 13.9497C7.35609 14.2703 7.98813 14.4619 8.66151 14.4841C7.56144 13.7192 6.83606 12.4102 6.83606 10.929C6.83606 10.1447 7.0374 9.41037 7.39076 8.78153C9.41489 11.3663 12.4391 13.0682 15.8487 13.2459C15.7793 12.9335 15.7433 12.6073 15.7433 12.2728C15.7433 9.91427 17.5808 8 19.8463 8C21.0263 8 22.0931 8.51917 22.8411 9.34929C23.7759 9.15634 24.6546 8.80236 25.448 8.31234C25.1413 9.31042 24.4906 10.1461 23.6425 10.6764C24.4719 10.5737 25.2626 10.3446 26 10.0045C25.452 10.8624 24.7572 11.6134 23.9532 12.2172Z" fill="white"></path></svg>
+          </button>
+          </div>
+      </div>
+  </div>
+</div>

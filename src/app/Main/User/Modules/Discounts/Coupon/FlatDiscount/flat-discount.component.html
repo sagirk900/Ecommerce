@@ -1,0 +1,209 @@
+<div class="container-fluid">
+  <form>
+      <div class="row mt-4">
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+          <div class="col-xl-8 col-lg-8 col-10">
+              <div class="card" style="background-color: rgba(0,0,0,.03);">
+                  <img src="" alt="">
+                  <div class="card-body">
+                      <div class="card percenatagecard">
+                          <div class="card-header">
+                              <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                  data-target="#collapseExample1" aria-expanded="false"
+                                  aria-controls="collapseExample">
+                                  Create coupon
+                              </button>
+                          </div>
+                          <div class="card-body p-0">
+                              <div class="collapse" id="collapseExample1">
+                                  <div class="card card-body">
+                                      <div class="form-row">
+                                          <div class="form-group col-md-6">
+                                              <label for="inputAddress">Coupon code</label>
+                                              <input type="text" class="form-control" id="couponcode"
+                                                  placeholder="Enter coupon code">
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                              <label for="inputState">Uses per customer</label>
+                                              <select id="inputState" class="form-control">
+                                                  <option selected hidden>Select uses per customer</option>
+                                                  <option value="once only">Once only</option>
+                                                  <option value="custom">Custom</option>
+                                                  <option value="unlimted">umlimted</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+          <div class="col-xl-8 col-lg-8 col-10">
+              <div class="card" style="background-color: rgba(0,0,0,.03);">
+                  <img src="" alt="">
+                  <div class="card-body">
+                      <div class="card percenatagecard">
+                          <div class="card-header">
+                              <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                  data-target="#collapseExample2" aria-expanded="false"
+                                  aria-controls="collapseExample">
+                                  Coupon details
+                              </button>
+                          </div>
+                          <div class="card-body p-0">
+                              <div class="collapse" id="collapseExample2">
+                                  <div class="card card-body">
+                                      <div class="form-row">
+                                          <div class="col-xl-6 col-lg-6 col-12">
+                                              <label for="">Discount percent</label>
+                                              <div class="input-group mb-3">
+                                                  <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="basic-addon1"><i
+                                                              class="fa fa-percent" aria-hidden="true"></i></span>
+                                                  </div>
+                                                  <input type="text" id="dicountpercent" class="form-control"
+                                                      placeholder="Enter percentage" aria-label="Username"
+                                                      aria-describedby="basic-addon1">
+                                              </div>
+
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-12">
+                                              <label for="">Minimum order value</label>
+                                              <div class="input-group mb-3">
+                                                  <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                                                  </div>
+                                                  <input type="text" id="dicountpercent" class="form-control"
+                                                      placeholder="Enter Amount" aria-label="Username"
+                                                      aria-describedby="basic-addon1">
+                                              </div>
+                                          </div>
+                                          <!-- <div class="col-6 col-lg-6 col-12">
+                                              <label for="">Maximum discount</label>
+                                              <div class="input-group mb-3">
+                                                  <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-inr" aria-hidden="true"></i></span>
+                                                  </div>
+                                                  <input type="text" id="Maximumdiscount" class="form-control"
+                                                      placeholder="Enter Amount" aria-label="Username"
+                                                      aria-describedby="basic-addon1">
+                                              </div>
+                                          </div> -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+          <div class="col-xl-8 col-lg-8 col-10">
+              <div class="card" style="background-color: rgba(0,0,0,.03);">
+                  <img src="" alt="">
+                  <div class="card-body">
+                      <div class="card percenatagecard">
+                          <div class="card-header">
+                              <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                  data-target="#collapseExample3" aria-expanded="false"
+                                  aria-controls="collapseExample">
+                                  Coupon functionality
+                              </button>
+                          </div>
+                          <div class="card-body p-0">
+                              <div class="collapse" id="collapseExample3">
+                                  <div class="card card-body">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <input type="checkbox" name="" id="customercoupon">
+                                              <label class="pl-2">Show coupon to customer</label>
+                                          </div>
+                                          <div class="col-12">
+                                              <input type="checkbox" name="" id="onlinepayments">
+                                              <label class="pl-2">Valid only for online payments</label>
+                                          </div>
+
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+          <div class="col-xl-8 col-lg-8 col-10">
+              <div class="card" style="background-color: rgba(0,0,0,.03);">
+                  <img src="" alt="">
+                  <div class="card-body">
+                      <div class="card percenatagecard">
+                          <div class="card-header">
+                              <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                  data-target="#collapseExample4" aria-expanded="false"
+                                  aria-controls="collapseExample">
+                                  coupon validity
+                              </button>
+                          </div>
+                          <div class="card-body p-0">
+                              <div class="collapse" id="collapseExample4">
+                                  <div class="card card-body">
+                                      <div class="form-row">
+                                          <div class="form-group col-md-6">
+                                            <label for="inputEmail4">From</label>
+                                            <div class="input-group mb-3">
+                                              <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">
+                                                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                                </span>
+                                              </div>
+                                              <input type="date" class="form-control" placeholder="Username" id="date" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                            <label for="inputPassword4">Time</label>
+                                            <div class="input-group mb-3">
+                                              <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">
+                                                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                </span>
+                                              </div>
+                                              <input type="time" class="form-control" id="time" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                          <label class="form-check-label" for="defaultCheck1">
+                                            Set an end date
+                                          </label>
+                                        </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-1"></div>
+      </div>
+      <div class="row my-4">
+          <div class="col-2"></div>
+          <div class="col-8 text-xl-right text-lg-right text-center percenatagecard">
+              <button class="btn">create coupon</button>
+          </div>
+          <div class="col-2"></div>
+      </div>
+  </form>
+</div>

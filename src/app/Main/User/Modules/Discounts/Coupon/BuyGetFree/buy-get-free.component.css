@@ -1,0 +1,26 @@
+
+  .percenatagecard .card-header
+  {
+    background-color: white;
+  }
+  .percenatagecard .btn-primary
+  {
+    background-color: #146eb4;
+    border: 1px solid #146eb4;
+    transition: all 0.5s ease-in-out;
+  }
+  .percenatagecard .btn-primary:hover
+  {
+    transform: scale(1.1);
+  }
+  .percenatagecard .btn
+  {
+    background-color: #146eb4;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    padding: 10px 20px;
+  }
+  .percenatagecard .btn:hover
+  {
+    transform: scale(1.1);
+  }

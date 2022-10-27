@@ -1,1 +1,35 @@
-<p>my-account works!</p>
+
+  <div class="d-flex fixed-container">
+    <div class="account-navigation-card mr32">
+      <div class="account-navigation-item">
+        <a href="" [routerLink]="['./']"><p class="account-navigation-item-label"><i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>Store Details</p></a>
+      </div>
+      <div class="account-navigation-item">
+        <a href="" [routerLink]="['./Subscription']"><p class="account-navigation-item-label"><i class="fa fa-bell ps-2 pe-2"></i>Subscription</p></a>
+      </div>
+      <div class="account-navigation-item">
+        <a href="" [routerLink]="['./Invoices']"><p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Invoices</p></a>
+      </div>
+
+      <!-- <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link" href="">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="">Link</a>
+  </li>
+</ul> -->
+    </div>
+    <div class="fill-available">
+      <div class="p-2">
+        <h3>Store Details</h3>
+      </div>
+      <div class="d-flex container" style="background-color: white;">
+      <router-outlet></router-outlet>
+    </div>
+    </div>
+
+</div>

@@ -1,10 +1,22 @@
 <div class="wrapper">
- <app-sidebar></app-sidebar>
+  <app-sidebar></app-sidebar>
 
-    <!-- Page Content  -->
-  <div id="content">
+  <!-- Page Content  -->
+  <div id="content" style="height:100vh">
 
-   <app-header></app-header>
-    <router-outlet></router-outlet>
+    <app-header></app-header>
+
+    <div class="py32" style="overflow: scroll; height: 90vh">
+      <div class="container-fluid">
+        <div class="mx-2 row">
+          <div class="col-12">
+        <div class="text-center mb-0 p-3 jumbotron">
+          <h3>test</h3>
+        </div>
+          </div>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
     </div>
+  </div>
 </div>

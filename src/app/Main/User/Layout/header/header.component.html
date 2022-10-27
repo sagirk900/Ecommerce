@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" style="height: 10vh;">
   <div class="container-fluid">
 
     <button type="button" (click)="collapsesidebar()" id="sidebarCollapse" class="btn btn-info">
@@ -106,13 +106,13 @@
                 </div>
                 </div>
                 <div class="dropdown-divider"></div>
-                <div class="m-2 moreItemDiv">
-                  <i class="fa fa-user m-2 moreicons" aria-hidden="true"></i> <span>My Account</span>
+                <div class="m-2 moreItemDiv" (click)="gotoPath('MyAccount')">
+                  <i class="fa fa-user m-2 moreicons" aria-hidden="true"></i><span>My Account</span>
                 </div>
-                <div class="m-2 moreItemDiv">
+                <div class="m-2 moreItemDiv" (click)="gotoPath('StoreSetting')">
                   <i class="fa fa-wrench m-2 moreicons" aria-hidden="true"></i> <span>Store Setting</span>
                 </div>
-                <div class="m-2 moreItemDiv">
+                <div class="m-2 moreItemDiv" (click)="gotoPath('Tutorial')">
                   <i class="fa fa-laptop m-2 moreicons" aria-hidden="true"></i> <span>Tutorials</span>
                 </div>
                 <div class="m-2 moreItemDiv" >
