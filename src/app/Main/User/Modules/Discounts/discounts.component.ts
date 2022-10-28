@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiscountsComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router) {
+    sessionStorage.setItem('pageTitle','Discount Coupons');
+   }
 
   ngOnInit(): void {
   }

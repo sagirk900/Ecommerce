@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeliveryComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    sessionStorage.setItem('pageTitle','Delivery');
+  }
 
   ngOnInit(): void {
   }

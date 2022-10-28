@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomersComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    sessionStorage.setItem('pageTitle','My Customers');
+   }
 
   ngOnInit(): void {
   }

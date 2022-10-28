@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PercentDiscountComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    sessionStorage.setItem('pageTitle','Create Percent Discount Coupon');
+   }
 
   ngOnInit(): void {
   }

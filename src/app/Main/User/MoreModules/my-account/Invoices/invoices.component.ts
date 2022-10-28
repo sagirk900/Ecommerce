@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvoicesComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    sessionStorage.setItem('subMenu','Invoices');
+  }
 
   ngOnInit(): void {
   }

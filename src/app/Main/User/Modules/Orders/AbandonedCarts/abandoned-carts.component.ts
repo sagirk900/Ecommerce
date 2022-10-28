@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbandonedCartsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    sessionStorage.setItem('pageTitle','Abandoned Carts');
+   }
 
   ngOnInit(): void {
   }

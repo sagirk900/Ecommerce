@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlatDiscountComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    sessionStorage.setItem('pageTitle','Create Flat Discount Coupon');
+  }
 
   ngOnInit(): void {
   }

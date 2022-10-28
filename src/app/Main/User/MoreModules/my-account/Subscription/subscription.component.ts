@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubscriptionComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    sessionStorage.setItem('subMenu','Subscription');
+   }
 
   ngOnInit(): void {
   }

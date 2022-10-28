@@ -43,6 +43,10 @@
     line-height: 24px;
     font-weight: 500;
 }
-.account-navigation-card .account-navigation-item.active, .account-navigation-card .account-navigation-item a:hover {
+.account-navigation-card .account-navigation-item a.active p, .account-navigation-card .account-navigation-item p:hover {
   color: #146eb4 !important;
+}
+.my-4{
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
 }

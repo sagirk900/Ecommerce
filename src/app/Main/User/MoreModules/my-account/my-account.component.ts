@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyAccountComponent implements OnInit {
 
-  constructor() { }
+  selectedSubMenuId=1;
+  constructor() {
+    sessionStorage.setItem('pageTitle','My Account');
+    sessionStorage.setItem('subMenu','Store Details');
+  }
 
   ngOnInit(): void {
   }
 
+  getSubMenuTitle():string{
+    return <string>sessionStorage.getItem('subMenu');
+  }
+  changeSubMenu(menuId:number){
+    this.selectedSubMenuId = menuId;
+  }
 }

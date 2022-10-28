@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FreeShippingComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    sessionStorage.setItem('pageTitle','Create Free Shipping Coupon');
+  }
 
   ngOnInit(): void {
   }
