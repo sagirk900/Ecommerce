@@ -1,0 +1,10 @@
+.underline{
+  text-decoration: underline;
+}
+.rad label label:hover,.rad label input:hover{
+  color: blue;
+  cursor: pointer;
+}
+.underline:hover{
+  cursor: pointer;
+}

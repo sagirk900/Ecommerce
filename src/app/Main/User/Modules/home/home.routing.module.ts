@@ -1,3 +1,15 @@
+import { WarehouseComponent } from './../../MoreModules/store-setting/Warehouse/warehouse.component';
+import { SupportAndSocialComponent } from './../../MoreModules/store-setting/SupportAndSocial/support-and-social.component';
+import { StoreTimingComponent } from './../../MoreModules/store-setting/StoreTiming/store-timing.component';
+import { StaffAccountsComponent } from './../../MoreModules/store-setting/StaffAccounts/staff-accounts.component';
+import { ShippingComponent } from './../../MoreModules/store-setting/Shipping/shipping.component';
+import { PreferancesComponent } from './../../MoreModules/store-setting/Preferances/preferances.component';
+import { PoliciesComponent } from './../../MoreModules/store-setting/Policies/policies.component';
+import { PaymentsComponent } from './../../MoreModules/store-setting/Payments/payments.component';
+import { OrderFormComponent } from './../../MoreModules/store-setting/OrderForm/order-form.component';
+import { LanguagesComponent } from './../../MoreModules/store-setting/Languages/languages.component';
+import { ExtraChargesComponent } from './../../MoreModules/store-setting/ExtraCharges/extra-charges.component';
+import { DomainsComponent } from './../../MoreModules/store-setting/Domains/domains.component';
 import { CustomersComponent } from './../Customers/customers.component';
 import { FreeShippingComponent } from './../Discounts/Coupon/FreeShipping/free-shipping.component';
 import { BuyGetFreeComponent } from './../Discounts/Coupon/BuyGetFree/buy-get-free.component';
@@ -34,7 +46,22 @@ const userRoutes: Routes = [
           {path:'Invoices',component:InvoicesComponent}
         ]
       },
-      {path:'StoreSetting',component:StoreSettingComponent},
+      {path:'StoreSetting',component:StoreSettingComponent,
+        children:[
+          {path:'Domains',component:DomainsComponent},
+          {path:'ExtraCharges',component:ExtraChargesComponent},
+          {path:'Languages',component:LanguagesComponent},
+          {path:'OrderForm',component:OrderFormComponent},
+          {path:'Payments',component:PaymentsComponent},
+          {path:'Policies',component:PoliciesComponent},
+          {path:'',component:PreferancesComponent},
+          {path:'Shipping',component:ShippingComponent},
+          {path:'StaffAccounts',component:StaffAccountsComponent},
+          {path:'StoreTiming',component:StoreTimingComponent},
+          {path:'SupportAndSocial',component:SupportAndSocialComponent},
+          {path:'Warehouse',component:WarehouseComponent}
+        ]
+      },
       {path:'Tutorial',component:TutorialsComponent},
       {path:'Orders',component:OrdersComponent,
         children:[

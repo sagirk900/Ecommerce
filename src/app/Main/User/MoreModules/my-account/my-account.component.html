@@ -1,17 +1,24 @@
+<div class="d-flex fixed-container my-4">
+  <div class="account-navigation-card mr32">
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./']" (click)="changeSubMenu(1)" [ngClass]="{'active':selectedSubMenuId==1}">
+        <p class="account-navigation-item-label"><i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>Store
+          Details</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./Subscription']" (click)="changeSubMenu(2)"
+        [ngClass]="{'active':selectedSubMenuId==2}">
+        <p class="account-navigation-item-label"><i class="fa fa-bell ps-2 pe-2"></i>Subscription</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./Invoices']" (click)="changeSubMenu(3)" [ngClass]="{'active':selectedSubMenuId==3}">
+        <p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Invoices</p>
+      </a>
+    </div>
 
-  <div class="d-flex fixed-container my-4">
-    <div class="account-navigation-card mr32">
-      <div class="account-navigation-item" >
-        <a href="" [routerLink]="['./']" (click)="changeSubMenu(1)" [ngClass]="{'active':selectedSubMenuId==1}"><p class="account-navigation-item-label"><i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>Store Details</p></a>
-      </div>
-      <div class="account-navigation-item" >
-        <a href="" [routerLink]="['./Subscription']" (click)="changeSubMenu(2)" [ngClass]="{'active':selectedSubMenuId==2}"><p class="account-navigation-item-label"><i class="fa fa-bell ps-2 pe-2"></i>Subscription</p></a>
-      </div>
-      <div class="account-navigation-item" >
-        <a href="" [routerLink]="['./Invoices']" (click)="changeSubMenu(3)" [ngClass]="{'active':selectedSubMenuId==3}"><p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Invoices</p></a>
-      </div>
-
-      <!-- <ul class="nav flex-column">
+    <!-- <ul class="nav flex-column">
   <li class="nav-item">
     <a class="nav-link" href="">Active</a>
   </li>
@@ -22,14 +29,15 @@
     <a class="nav-link" href="">Link</a>
   </li>
 </ul> -->
+  </div>
+  <div class="fill-available">
+    <div class="p-2">
+      <h3>{{getSubMenuTitle()}}</h3>
     </div>
-    <div class="fill-available">
-      <div class="p-2">
-        <h3>{{getSubMenuTitle()}}</h3>
-      </div>
-      <div class="d-flex container">
-      <router-outlet></router-outlet>
+    <div class="d-flex" style="width: 80%;">
+      <router-outlet class="d-flex"></router-outlet>
+
     </div>
-    </div>
+  </div>
 
 </div>

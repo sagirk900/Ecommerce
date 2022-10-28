@@ -6,17 +6,20 @@
 
     <app-header></app-header>
 
-    <div class="py32" style="overflow: scroll; height: 90vh">
+    <div class="py32" style="height: 90vh">
       <div class="container-fluid">
         <div class="mx-2 row">
           <div class="col-12">
-        <div class="text-center mb-0 p-3 jumbotron">
-          <h3>{{getSelectedModule()}}</h3>
-        </div>
+            <div class="text-center mb-0 p-3 jumbotron" style="position:sticky ;height: 10vh;position:-webkit-sticky">
+              <h3>{{getSelectedModule()}}</h3>
+            </div>
+          </div>
+          <div class="col-12" style="height: 80vh; overflow: scroll;">
+            <router-outlet></router-outlet>
           </div>
         </div>
       </div>
-      <router-outlet></router-outlet>
+
     </div>
   </div>
 </div>

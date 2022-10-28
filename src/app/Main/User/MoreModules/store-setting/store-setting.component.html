@@ -1,1 +1,87 @@
-<p>store-setting works!</p>
+<div class="d-flex fixed-container my-4">
+  <div class="account-navigation-card mr32">
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./']" (click)="changeSubMenu(1)" [ngClass]="{'active':selectedSubMenuId==1}">
+        <p class="account-navigation-item-label"><i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>Preferances</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./StaffAccounts']" (click)="changeSubMenu(2)"
+        [ngClass]="{'active':selectedSubMenuId==2}">
+        <p class="account-navigation-item-label"><i class="fa fa-id-card-o ps-2 pe-2" aria-hidden="true"></i>Staff Accounts</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./Payments']" (click)="changeSubMenu(3)" [ngClass]="{'active':selectedSubMenuId==3}">
+        <p class="account-navigation-item-label"><i class="fa fa-credit-card ps-2 pe-2" aria-hidden="true"></i>Payments</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./Shipping']" (click)="changeSubMenu(4)" [ngClass]="{'active':selectedSubMenuId==4}">
+        <p class="account-navigation-item-label"><i class="fa fa-truck ps-2 pe-2" aria-hidden="true"></i>Shipping</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./Warehouse']" (click)="changeSubMenu(5)" [ngClass]="{'active':selectedSubMenuId==5}">
+        <p class="account-navigation-item-label"><i class="fa fa-building ps-2 pe-2" aria-hidden="true"></i>Warehouse</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./ExtraCharges']" (click)="changeSubMenu(6)" [ngClass]="{'active':selectedSubMenuId==6}">
+        <p class="account-navigation-item-label"><i class="fa fa-plus-square ps-2 pe-2" aria-hidden="true"></i>Extra Charges</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./OrderForm']" (click)="changeSubMenu(7)" [ngClass]="{'active':selectedSubMenuId==7}">
+        <p class="account-navigation-item-label"><i class="fa fa-file-text ps-2 pe-2" aria-hidden="true"></i>Order Form</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./StoreTiming']" (click)="changeSubMenu(8)" [ngClass]="{'active':selectedSubMenuId==8}">
+        <p class="account-navigation-item-label"><i class="fa fa-clock-o ps-2 pe-2" aria-hidden="true"></i>Store Timings</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./Domains']" (click)="changeSubMenu(9)" [ngClass]="{'active':selectedSubMenuId==9}">
+        <p class="account-navigation-item-label"><i class="fa fa-globe ps-2 pe-2" aria-hidden="true"></i>Domains</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./SupportAndSocial']" (click)="changeSubMenu(10)" [ngClass]="{'active':selectedSubMenuId==10}">
+        <p class="account-navigation-item-label"><i class="fa fa-users ps-2 pe-2" aria-hidden="true"></i>Support & Social</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./Languages']" (click)="changeSubMenu(11)" [ngClass]="{'active':selectedSubMenuId==11}">
+        <p class="account-navigation-item-label"><i class="fa fa-language ps-2 pe-2" aria-hidden="true"></i>Languages</p>
+      </a>
+    </div>
+    <div class="account-navigation-item">
+      <a href="" [routerLink]="['./Policies']" (click)="changeSubMenu(12)" [ngClass]="{'active':selectedSubMenuId==12}">
+        <p class="account-navigation-item-label"><i class="fa fa-file-text ps-2 pe-2" aria-hidden="true"></i>Policies</p>
+      </a>
+    </div>
+
+    <!-- <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link" href="">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="">Link</a>
+  </li>
+</ul> -->
+  </div>
+  <div class="fill-available">
+    <div class="p-2">
+      <h3>{{getSubMenuTitle()}}</h3>
+    </div>
+    <div class="d-flex container">
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+
+</div>

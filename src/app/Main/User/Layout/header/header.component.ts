@@ -23,5 +23,7 @@ public iscollapsed = true;
     // path= '/'+path;
     this.router.navigateByUrl('User/'+path);
   }
-
+  gotoHome(){
+    this.router.navigate(['../']);
+  }
 }

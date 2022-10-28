@@ -1,5 +1,5 @@
-<div class="" style="width: 130% !important;">
-<form action="" >
+<div class="" style="width: 120% !important;">
+<form action="" #formdata="ngForm">
   <div class="container p-2 mb-5" style="background-color: white;">
     <div class="mb-1" >
       <div class="p-3">
@@ -21,29 +21,29 @@
       <div class="row p-3">
         <div class="col-6 form-group">
           <label for="StoreLink">Store Link</label>
-          <input type="text" class="form-control" id="StoreLink" placeholder="Enter Your Store Link">
+          <input type="text" class="form-control" id="StoreLink" placeholder="Enter Your Store Link" ngModel name="StoreLink">
         </div>
         <div class="col-6 form-group">
           <label for="BusinessName">Business Name<span class="text-danger"> * </span></label>
-          <input type="text" required class="form-control" id="BusinessName" placeholder="Enter Your Business Name">
+          <input type="text" required class="form-control" id="BusinessName" ngModel name="BusinessName" placeholder="Enter Your Business Name">
         </div>
       </div>
       <div class="row p-3">
         <div class="col-6 form-group">
           <label for="BusinessCat">Business Category<span class="text-danger"> * </span></label>
-          <input type="text" [value]="selectedCatText" placeholder="Choose Business Category" data-toggle="modal" data-target="#exampleModal" required class="form-control" id="BusinessCat">
+          <input type="text" placeholder="Choose Business Category" [(ngModel)]="selectedCatText" name="BusinessCategory" data-toggle="modal" data-target="#exampleModal" required class="form-control" id="BusinessCat">
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Choose Business Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <div *ngFor="let cat of CategoryList" class="category m-2" [ngClass]="{'active':selectedCat==cat.id}" (click)="selectedCategory(cat.id)">
+                <div *ngFor="let cat of CategoryList" class="category m-2" [ngClass]="{'active':selectedCat==cat.id}" data-dismiss="modal" (click)="selectedCategory(cat.id)">
                   <img style="background-color: gray ;" [src]="cat.path" height="100px" width="100px">
                   <span style="vertical-align:middle;" class="px-2">{{cat.text}}</span>
                 </div>
@@ -67,7 +67,7 @@
                 </div>
               </span>
             </div>
-            <input type="text" class="form-control" placeholder="0123456789" aria-label="Username" aria-describedby="basic-addon1" id="MobNo">
+            <input type="text" class="form-control" ngModel name="MobileNo" placeholder="0123456789" aria-label="Username" aria-describedby="basic-addon1" id="MobNo">
           </div>
         </div>
 
@@ -75,11 +75,11 @@
       <div class="row p-3">
         <div class="col-6 form-group">
           <label for="Email">Email Address</label>
-          <input type="text" class="form-control" id="Email" placeholder="Enter Your Email">
+          <input type="text" class="form-control" ngModel name="Email" id="Email" placeholder="Enter Your Email">
         </div>
         <div class="col-6 form-group">
           <label for="BusinessName">Country<span class="text-danger"> * </span></label>
-          <input type="text" [value]="selectedCurCountryText" class="form-control" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Choose your country">
+          <input type="text" [(ngModel)]="selectedCurCountryText" name="Country" required class="form-control" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Choose your country">
 
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <div class="dropdown-item m-2" (click)="changeCountryCur(country.id)" *ngFor="let country of CountryList"><img [src]="country.path" height="18px" width="24px" alt=""> {{country.text}} ({{country.currency}})</div>
@@ -90,14 +90,14 @@
       <div class="row p-3">
         <div class="col-6 form-group">
           <label for="StoreLink">FSSAI Number</label>
-          <input type="text" class="form-control" id="StoreLink" placeholder="Enter FSSAI Number">
+          <input type="text" ngModel name="FSSAINo" class="form-control" id="StoreLink" placeholder="Enter FSSAI Number">
         </div>
       </div>
 
       <div class="row p-3">
         <div class="col-12 form-group">
           <label for="Address">Store Address</label>
-          <input type="text" class="form-control" id="Address" placeholder="Enter Your Address">
+          <input type="text" ngModel name="StoreAddress" class="form-control" id="Address" placeholder="Enter Your Address">
         </div>
       </div>
     </div>
@@ -106,7 +106,7 @@
     <span><a href="" class="text-danger">Delete My Store</a></span>
   </div>
   <div class="container p-2 mt-3 d-flex flex-row-reverse">
-    <button class="btn btn-outline-primary">Save</button>
+    <button type="submit" [disabled]="formdata.invalid && formdata.untouched" class="btn btn-outline-primary">Save</button>
   </div>
 </form>
 </div>

@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { SubscriptionComponent } from './Subscription/subscription.component';
@@ -16,7 +17,8 @@ import { NgModule } from "@angular/core";
               , SubscriptionComponent],
   imports:[MyAccountRoutingModule
         , BrowserModule
-        ,CommonModule],
+        ,CommonModule
+        ,FormsModule],
 })
 export class MyAccountModule{
 

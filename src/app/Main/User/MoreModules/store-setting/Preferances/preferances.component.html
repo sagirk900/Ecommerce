@@ -1,0 +1,176 @@
+<div class="row" style=" width: 110%;">
+  <div class="col-12 container p-2 mb-5" style="background-color: white;">
+    <div class="mb-1 ">
+      <div class="p-3 ">
+        <h4>Orders</h4>
+        <div class="row pt-2 pb-2">
+          <div class="col">
+            <span>Auto accept orders<i data-toggle="tooltip" data-html="true" title="Accept All Your New Orders Automatically" class="fa fa-info-circle ps-2 pe-2" aria-hidden="true"></i></span>
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn border-0" data-toggle="modal" data-target="#exampleModalCenter">
+              Never <span> <i class="fa fa-chevron-right" aria-hidden="true"></i> </span>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Auto-Accept Orders</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="" #formdata="ngForm">
+                      <div class="rad">
+                        <label for="">
+                          <span class="ps-2 pe-2 pb-2"><input type="radio" id="cod" name="AutoAcceptOrder"></span>
+                          <span class="ps-2 pe-2 pb-2"><label for="cod">COD orders only</label></span>
+                          <span class="ps-2 pe-2 pb-2 underline text-10 text-warning">Activate COD Payment</span>
+
+                        </label>
+                      </div>
+
+                      <div class="rad">
+                        <label for="">
+                        <span class="ps-2 pe-2 pb-2"><input type="radio" id="Prepaid" name="AutoAcceptOrder"></span>
+                        <span class="ps-2 pe-2 pb-2"> <label for="Prepaid">Prepaid orders only</label></span>
+                        <span class="ps-2 pe-2 pb-2 underline text-10 text-warning">Activate online Payment</span>
+
+                      </label>
+                      </div>
+
+                      <div class="rad">
+
+                        <label for="">
+                          <span class="ps-2 pe-2 pb-2"><input type="radio" checked="checked" id="Never" name="AutoAcceptOrder"></span>
+                          <span class="ps-2 pe-2 pb-2"><label for="Never">Never</label></span>
+
+                        </label>
+                      </div>
+                      <div class="pt-3 text-center">
+                        <button type="submit" data-dismiss="modal" class="btn btn-outline-primary">Save Changes</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row pb-2">
+          <div class="col">
+            <span>Show Notes and Activites<i data-toggle="tooltip" data-html="true" title="Show Notes and Activites in order detail page" class="fa fa-info-circle ps-2 pe-2" aria-hidden="true"></i></span>
+          </div>
+          <div class="col-2">
+
+            <div>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <span>Anounce New Orders<i data-toggle="tooltip" data-html="true" title="Anounce New Order Confirmation" class="fa fa-info-circle ps-2 pe-2" aria-hidden="true"></i></span>
+          </div>
+          <div class="col-2">
+
+            <div>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-12 container p-2 mb-5" style="background-color: white;">
+    <div class="mb-1 ">
+      <div class="p-3 ">
+        <h4>Catalogue</h4>
+
+        <div class="row">
+          <div class="col">
+            <span>Advance Catalogue<i data-toggle="tooltip" data-html="true" title="Enable advanced fields such as GST percentage, SKU, weight and inventory of each variant and HSN fields on individual product" class="fa fa-info-circle ps-2 pe-2" aria-hidden="true"></i></span>
+          </div>
+          <div class="col-2">
+
+            <div>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-12 container p-2 mb-5" style="background-color: white;">
+    <div class="mb-1 ">
+      <div class="p-3 ">
+        <h4>Notifications</h4>
+
+        <div class="row">
+          <div class="col">
+            <P style="font-size:16PX ;">Send order notifications to the customers automatically.</P>
+          </div>
+          <div class="col-2">
+
+            <div>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-12 container p-2 mb-5" style="background-color: white;">
+    <div class="mb-1 ">
+      <div class="p-3 ">
+        <h4>Header</h4>
+
+        <div class="row pt-2">
+          <div class="col">
+            <span>Show Store Name<i data-toggle="tooltip" data-html="true" title="Show store name alongside the store logo at the top of navigation bar" class="fa fa-info-circle ps-2 pe-2" aria-hidden="true"></i></span>
+          </div>
+          <div class="col-2">
+
+            <div>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
