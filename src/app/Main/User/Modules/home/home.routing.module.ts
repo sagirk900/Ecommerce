@@ -32,6 +32,8 @@ import { UserDashboardComponent } from '../user-dashboard/user-dashboard.compone
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { MyAccountComponent } from '../../MoreModules/my-account/my-account.component';
+import { ProductComponent } from '../product/product.component';
+import { AddnewproductComponent } from '../product/addnewproduct/addnewproduct.component';
 
 
 const userRoutes: Routes = [
@@ -71,6 +73,11 @@ const userRoutes: Routes = [
         ]
       },
       {path:'Delivery',component:DeliveryComponent},
+      {path:'Product',component:AddnewproductComponent,
+      children:[
+        {path:'AddNewProduct',component:AddnewproductComponent}
+      ]
+    },
       {path:'Discounts',component:DiscountsComponent},
       {path:'Coupon',component:CouponComponent,
         children:[

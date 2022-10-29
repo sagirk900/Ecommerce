@@ -22,6 +22,8 @@ import { NgModule } from "@angular/core";
 import { HomeComponent } from './home/home.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { HomeStepComponent } from './home/home-step/home-step.component';
+import { ProductComponent } from './product/product.component';
+import { AddnewproductComponent } from './product/addnewproduct/addnewproduct.component';
 
 @NgModule({
   declarations:[
@@ -37,7 +39,9 @@ import { HomeStepComponent } from './home/home-step/home-step.component';
     BuyGetFreeComponent,
     FreeShippingComponent,
     PercentDiscountComponent,
-    CustomersComponent
+    CustomersComponent,
+    ProductComponent,
+    AddnewproductComponent
   ],
   imports:[
     LayoutModule,
