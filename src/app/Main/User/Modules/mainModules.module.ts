@@ -30,6 +30,12 @@ import { InventoryComponent } from './product/addnewproduct/inventory/inventory.
 import { AddonsComponent } from './product/addnewproduct/addons/addons.component';
 import { SizesComponent } from './product/addnewproduct/sizes/sizes.component';
 import { ColorsComponent } from './product/addnewproduct/colors/colors.component';
+import { CategoriesComponent } from './product/categories/categories.component';
+import { InventoriesComponent } from './product/inventories/inventories.component';
+import { AddnewcategoryComponent } from './product/categories/addnewcategory/addnewcategory.component';
+import { CategoryInformationComponent } from './product/categories/category-information/category-information.component';
+import { CategoryBannerComponent } from './product/categories/category-banner/category-banner.component';
+import { CategoryContentComponent } from './product/categories/category-content/category-content.component';
 
 @NgModule({
   declarations:[
@@ -53,7 +59,13 @@ import { ColorsComponent } from './product/addnewproduct/colors/colors.component
     InventoryComponent,
     AddonsComponent,
     SizesComponent,
-    ColorsComponent
+    ColorsComponent,
+    CategoriesComponent,
+    InventoriesComponent,
+    AddnewcategoryComponent,
+    CategoryInformationComponent,
+    CategoryBannerComponent,
+    CategoryContentComponent
   ],
   imports:[
     LayoutModule,

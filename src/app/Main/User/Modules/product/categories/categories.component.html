@@ -1,0 +1,64 @@
+
+<div class="d-flex fixed-container my-4">
+    <div class="account-navigation-card">
+      <div class="account-navigation-item">
+        <p>
+         <i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>
+          Quick Navigation</p>
+        
+      </div>
+
+      <div class="account-navigation-item">
+        <a href="" [routerLink]="['./pinformation']" (click)="changeSubMenu(1)" [ngClass]="{'active':selectedSubMenuId==1}" >
+          <p class="account-navigation-item-label"><i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>
+          Product Information</p>
+        </a>
+      </div>
+      <div class="account-navigation-item">
+        <a href="" [routerLink]="['./pmedia']" (click)="changeSubMenu(2)"
+          [ngClass]="{'active':selectedSubMenuId==2}">
+          <p class="account-navigation-item-label"><i class="fa fa-bell ps-2 pe-2"></i>
+          Product Media</p>
+        </a>
+      </div>
+      <div class="account-navigation-item">
+        <a href="" [routerLink]="['./pinventory']" (click)="changeSubMenu(3)" [ngClass]="{'active':selectedSubMenuId==3}">
+          <p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Inventory</p>
+        </a>
+      </div>
+      <div class="account-navigation-item">
+        <a href="" [routerLink]="['./psizes']" (click)="changeSubMenu(4)" [ngClass]="{'active':selectedSubMenuId==4}">
+          <p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Sizes</p>
+        </a>
+      </div>
+      
+      
+      <div class="account-navigation-item">
+        <a href="" [routerLink]="['./pcolors']" (click)="changeSubMenu(5)" [ngClass]="{'active':selectedSubMenuId==5}">
+          <p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Colors</p>
+        </a>
+      </div>
+      <!-- <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">Link</a>
+    </li>
+  </ul> -->
+    </div>
+    <div class="fill-available">
+      <div class="p-2">
+        <h3>{{getSubMenuTitle()}}</h3>
+      </div>
+      <div class="m-0 p-0" style="">
+        <router-outlet ></router-outlet>
+  
+      </div>
+    </div>
+  
+  </div>
+  

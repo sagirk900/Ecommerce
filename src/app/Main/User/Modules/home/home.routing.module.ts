@@ -39,6 +39,12 @@ import { ProductmediaComponent } from '../product/addnewproduct/productmedia/pro
 import { SizesComponent } from '../product/addnewproduct/sizes/sizes.component';
 import { ColorsComponent } from '../product/addnewproduct/colors/colors.component';
 import { InventoryComponent } from '../product/addnewproduct/inventory/inventory.component';
+import { CategoriesComponent } from '../product/categories/categories.component';
+import { InventoriesComponent } from '../product/inventories/inventories.component';
+import { AddnewcategoryComponent } from '../product/categories/addnewcategory/addnewcategory.component';
+import { CategoryInformationComponent } from '../product/categories/category-information/category-information.component';
+import { CategoryBannerComponent } from '../product/categories/category-banner/category-banner.component';
+import { CategoryContentComponent } from '../product/categories/category-content/category-content.component';
 
 
 const userRoutes: Routes = [
@@ -88,6 +94,16 @@ const userRoutes: Routes = [
         {path:'pcolors',component:ColorsComponent},
       ]
     },
+    
+    {path:'pcategories',component:AddnewcategoryComponent,
+    children:[
+      {path:'AddNewcategory',component:AddnewcategoryComponent},
+      {path:'cinformation',component:CategoryInformationComponent},
+      {path:'cbanner',component:CategoryBannerComponent},
+      {path:'ccontent',component:CategoryContentComponent},
+    ]
+  },
+    {path:'pinventories',component:InventoriesComponent},
       {path:'Discounts',component:DiscountsComponent},
       {path:'Coupon',component:CouponComponent,
         children:[
