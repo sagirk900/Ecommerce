@@ -34,6 +34,11 @@ import { NgModule } from '@angular/core';
 import { MyAccountComponent } from '../../MoreModules/my-account/my-account.component';
 import { ProductComponent } from '../product/product.component';
 import { AddnewproductComponent } from '../product/addnewproduct/addnewproduct.component';
+import { ProductInformationComponent } from '../product/addnewproduct/product-information/product-information.component';
+import { ProductmediaComponent } from '../product/addnewproduct/productmedia/productmedia.component';
+import { SizesComponent } from '../product/addnewproduct/sizes/sizes.component';
+import { ColorsComponent } from '../product/addnewproduct/colors/colors.component';
+import { InventoryComponent } from '../product/addnewproduct/inventory/inventory.component';
 
 
 const userRoutes: Routes = [
@@ -75,7 +80,12 @@ const userRoutes: Routes = [
       {path:'Delivery',component:DeliveryComponent},
       {path:'Product',component:AddnewproductComponent,
       children:[
-        {path:'AddNewProduct',component:AddnewproductComponent}
+        {path:'AddNewProduct',component:AddnewproductComponent},
+        {path:'pinformation',component:ProductInformationComponent},
+        {path:'pinventory',component:InventoryComponent},
+        {path:'pmedia',component:ProductmediaComponent},
+        {path:'psizes',component:SizesComponent},
+        {path:'pcolors',component:ColorsComponent},
       ]
     },
       {path:'Discounts',component:DiscountsComponent},

@@ -24,6 +24,12 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { HomeStepComponent } from './home/home-step/home-step.component';
 import { ProductComponent } from './product/product.component';
 import { AddnewproductComponent } from './product/addnewproduct/addnewproduct.component';
+import { ProductInformationComponent } from './product/addnewproduct/product-information/product-information.component';
+import { ProductmediaComponent } from './product/addnewproduct/productmedia/productmedia.component';
+import { InventoryComponent } from './product/addnewproduct/inventory/inventory.component';
+import { AddonsComponent } from './product/addnewproduct/addons/addons.component';
+import { SizesComponent } from './product/addnewproduct/sizes/sizes.component';
+import { ColorsComponent } from './product/addnewproduct/colors/colors.component';
 
 @NgModule({
   declarations:[
@@ -41,7 +47,13 @@ import { AddnewproductComponent } from './product/addnewproduct/addnewproduct.co
     PercentDiscountComponent,
     CustomersComponent,
     ProductComponent,
-    AddnewproductComponent
+    AddnewproductComponent,
+    ProductInformationComponent,
+    ProductmediaComponent,
+    InventoryComponent,
+    AddonsComponent,
+    SizesComponent,
+    ColorsComponent
   ],
   imports:[
     LayoutModule,
