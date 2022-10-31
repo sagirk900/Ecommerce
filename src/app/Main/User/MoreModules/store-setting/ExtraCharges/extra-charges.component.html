@@ -1,1 +1,92 @@
-<p>extra-charges works!</p>
+<div class="container-fluid" style="width:100vh;">
+  <!-- form for gst num -->
+  <form action="">
+<div class="row">
+  <div class="col-12 p-0 mb-3">
+    <div class="card extracard">
+      <div class="card-body d-flex justify-content-between align-item-center">
+        <div class="pt-1">GST</div>
+        <div>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="card-footer">
+
+        <div class="row">
+
+          <div class="form-group col">
+            <label for="">GST Number</label>
+            <input type="text" id="gstnumber" class="form-control" placeholder="Enter GST Number">
+          </div>
+          <div class="form-group col">
+            <label for="">GST Percentage</label>
+            <input type="text" id="gstpercent" class="form-control" placeholder="Charges">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 mb-3 text-center">
+    <button type="button" class="btn extrachargesbtn" data-toggle="modal" data-target="#extrachargesmodal">Create extra Charges</button>
+    <div class="modal extramodal fade" id="extrachargesmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Create extra Charges</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row mb-3">
+                <div class="col-12 d-flex">
+                  <div class="form-check pr-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Percent
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Flat Price
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <div class="form-group text-left">
+                    <label for="inputAddress  text-left">Charges name</label>
+                    <input type="text" class="form-control" id="chargesname" placeholder="Enter charge name">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group text-left">
+                    <label for="inputAddress">Charges in percent</label>
+                    <input type="text" class="form-control" id="Chargespercent" placeholder="Charge percent">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-center">
+                  <button class="btn extrachargesbtn2" type="submit">Create</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12  text-right">
+    <button class="btn extrasavebtn" type="button">Save Changes</button>
+  </div>
+</div>
+</form>
+</div>
