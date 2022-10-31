@@ -1,10 +1,10 @@
-<div class="d-flex m-4 fixed-container my-4">
+<div class="d-flex m-4 fixed-container">
     <div class="account-navigation-card">
       <div class="account-navigation-item">
         <p>
          <i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>
           Quick Navigation</p>
-        
+
       </div>
 
       <div class="account-navigation-item">
@@ -30,8 +30,8 @@
           <p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Sizes</p>
         </a>
       </div>
-      
-      
+
+
       <div class="account-navigation-item">
         <a href="" [routerLink]="['./pcolors']" (click)="changeSubMenu(5)" [ngClass]="{'active':selectedSubMenuId==5}">
           <p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Colors</p>
@@ -50,14 +50,13 @@
   </ul> -->
     </div>
     <div class="fill-available">
-      <div class="p-2">
+      <div class="p-2 mx-4">
         <h3>{{getSubMenuTitle()}}</h3>
       </div>
       <div class="m-2 p-2" style="">
         <router-outlet ></router-outlet>
-  
+
       </div>
     </div>
-  
+
   </div>
-  
