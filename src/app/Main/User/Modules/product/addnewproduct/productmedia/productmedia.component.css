@@ -21,8 +21,9 @@
     margin-bottom: 24px;
 }
 .product-theme-aspect-ratio .file-image-upload {
-    width: 120px;
+    width: 150px;
     height: 150px;
+    text-align: center;
 }
 .file-image-upload:not(.has-image) {
     border: 1px solid #ccc;
@@ -64,6 +65,7 @@
     margin-top: 12px;
 }
 .px4 {
+    margin:auto;
     padding-left: 4px;
     padding-right: 4px;
 }
