@@ -15,7 +15,7 @@ export class StaffModel{
     this.roleId=roleId;
   }
 }
-export class RoleModel{
+export class DictonaryModel{
   public id:number|null;
   public text:string|null;
   constructor(
@@ -25,4 +25,12 @@ export class RoleModel{
     this.id = id;
     this.text = text;
   }
+}
+export class RoleModel extends DictonaryModel{
+}
+
+export class DeliveryTimeModel extends DictonaryModel{
+}
+export class TimeUnitModel extends DictonaryModel{
+
 }

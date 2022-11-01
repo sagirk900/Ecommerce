@@ -87,13 +87,23 @@
           <th>Name</th>
           <th>Role</th>
           <th>Contact Details</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let staff of staffList">
-          <td>{{staff.name}}</td>
+          <td>{{staff.name}} <span class="badge badge-secondary">Pending</span> </td>
           <td>{{getRoleNameById(staff.roleId)}}</td>
           <td>{{staff.contactDetail}}</td>
+          <td>
+            <div class="dropdown">
+            <i class="fa fa-caret-down" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-item">Resend Invite</div>
+              <div class="dropdown-item text-danger" (click)="RemoveStaff(staff.id)">Remove Staff</div>
+            </div>
+          </div>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -101,7 +111,62 @@
 </ng-template>
   <div class="row mt-3">
       <div class="col-12 text-center">
-          <button class="btn ms-3 me-3 AddMoreBtn">Add More Seats</button>
+          <button class="btn ms-3 me-3 AddMoreBtn" data-toggle="modal" data-target="#exampleModalCenter">Add More Seats</button>
+          <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Seats</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="gold-plan-nudge d-flex-c-c p12 m-3">
+          <div class="d-flex-c-c">
+            <i class="fa fa-info-circle text-warning fs-5" aria-hidden="true"></i>
+          </div>
+          <div class="ml8 text-10 ">Upgrade to Platinum plan and add upto 10 staff accounts for FREE!
+            <span class="text-medium text underline cur-p">Upgrade now</span>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-8">
+            <div class="row">
+              <div class="ms-2 me-2 col-6 fs-5">No. of Seats</div>
+              <div class="col-12">₹1,500/seat (One-time payment)</div>
+            </div>
+          </div>
+          <div class="col-4 pt-3 text-center">
+            <button (click)="CalculateTotal(false)" [ngClass]="{'bg-white':seatCount>1}" class="border border-secondary rounded-circle"><i class="fa fa-minus" aria-hidden="true"></i></button>
+            <span class="px-3">{{seatCount}}</span>
+            <button (click)="CalculateTotal(true)" class="border border-secondary bg-white rounded-circle"><i class="fa fa-plus" aria-hidden="true"></i></button>
+
+          </div>
+        </div>
+      </div>
+      <hr style="margin:0px 40px;border: 0.5px solid black;">
+      <div class="">
+        <div class="p-2 row px-5 font-weight-bold text-start">
+          <div class="col-6">
+            Total
+          </div>
+          <div class="col-6 text-end">
+            ₹{{totalSeatCost}}
+          </div>
+          <div class="col-12 pt-3 text-center">
+            <button type="button" class="btn btn-primary">Pay ₹{{totalSeatCost}}</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
           <button type="button" class="btn Couponbtn px-4 py-2" data-toggle="modal" data-target="#coupon">Add Staff</button>
           <div class="modal fade" id="coupon" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">

@@ -1,1 +1,116 @@
-<p>warehouse works!</p>
+<div class="container-fluid p-5" style="background-color: white;width: 100%;">
+  <!-- <div *ngIf="staffCount==0; else elseBlock"> -->
+  <div class="row">
+      <div class="col-xl-4 col-lg-4 col-12"></div>
+      <div class="col-xl-4 col-lg-4 col-12 text-center">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.2" d="M32 64C49.6731 64 64 49.6731 64 32C64 14.3269 49.6731 0 32 0C14.3269 0 0 14.3269 0 32C0 49.6731 14.3269 64 32 64Z" fill="#146EB4"></path><path d="M16 24.0708C16 23.0046 16.5659 22.0185 17.4865 21.4806L30.4865 13.8844C31.4215 13.338 32.5785 13.338 33.5135 13.8844L46.5135 21.4806C47.4341 22.0185 48 23.0046 48 24.0708V45C48 46.6569 46.6569 48 45 48H19C17.3431 48 16 46.6569 16 45V24.0708Z" fill="#146EB4"></path><rect x="29" y="26" width="6" height="6" rx="1" fill="#D0E2F0"></rect><rect x="24" y="36" width="6" height="6" rx="1" fill="#D0E2F0"></rect><rect x="34" y="36" width="6" height="6" rx="1" fill="#D0E2F0"></rect></svg>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-12"></div>
+  </div>
+  <div class="row mt-3">
+      <div class="col-12 text-center">
+          <h6 class="discounth6">Add your warehouse</h6>
+      </div>
+  </div>
+  <div class="row mt-2">
+      <div class="col-12 text-center">
+          <p class="discountp">Add your warehouse details to manage Delivery pickups & shipments.</p>
+      </div>
+  </div>
+<!-- </div> -->
+
+  <div class="row mt-3">
+      <div class="col-12 text-center">
+          <button class="btn ms-3 me-3 btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Add Your Warehouse</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="row">
+            <div class="modal-body w-100">
+              <div class=" col-12">
+                <div class="card Deliverycard1">
+                  <div class="card-body">
+                    <h5 class="card-title Deliverycard1title pb-4">Warehouse Information</h5>
+                    <form action="">
+                        <div class="form-row mb-md-3 mb-2">
+                            <div class="form-group col-12">
+                              <label for="inputEmail4">Warehouse Name</label>
+                              <input type="text" class="form-control" id="Warehousename" placeholder="Enter warehouse name.">
+                            </div>
+                        </div>
+                        <div class="form-row mb-md-3 mb-2">
+                            <div class="form-group col-md-6 mb-md-0 mb-2">
+                              <label for="inputEmail4">Contact Person</label>
+                              <input type="text" class="form-control" id="personname" placeholder="Enter Full Name.">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Mobile Number</label>
+                              <input type="tel" class="form-control" id="mobilenumber" placeholder="Enter Mobile Number.">
+                            </div>
+                        </div>
+                        <div class="form-row mb-md-3 mb-2">
+                            <div class="form-group col-md-6 mb-md-0 mb-2">
+                              <label for="inputEmail4">Flat, House no., Building, Company, Apartment</label>
+                              <input type="text" class="form-control" id="address" placeholder="Enter flat, house no...">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Area, Colony, Street, Sector, Village</label>
+                              <input type="text" class="form-control" id="colony" placeholder="Enter area,colony">
+                            </div>
+                        </div>
+                        <div class="form-row mb-md-3 mb-2">
+                            <div class="form-group col-md-6 mb-md-0 mb-2">
+                              <label for="inputEmail4">Pincode</label>
+                              <input type="text" class="form-control" id="pincode" placeholder="Enter pincode..">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">City</label>
+                              <input type="text" class="form-control" id="City" placeholder="Enter City..">
+                            </div>
+                         </div>
+                         <div class="form-row mb-md-3 mb-2">
+                            <div class="form-group col-md-6 mb-md-0 mb-2">
+                              <label for="inputState">State</label>
+                              <select id="state" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress">GST Number (optional)</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Enter Gst Number.">
+                              </div>
+                          </div>
+                          <div class="row mb-md-3 mb-2">
+                            <div class="form-group col-md-6 text-md-left text-center mb-md-0 mb-2">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label class="form-check-label" for="gridCheck">
+                                    I accept all <a href="">Terms and conditions.</a>
+                                  </label>
+                                </div>
+                              </div>
+                            <div class="col-md-6 text-md-right text-center">
+                             <button type="submit" value="submit" class="btn btn-primary createorderbtn">Finish set up</button>
+                            </div>
+                          </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
