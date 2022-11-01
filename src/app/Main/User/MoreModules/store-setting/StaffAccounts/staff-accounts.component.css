@@ -89,3 +89,29 @@
 .staffLbl{
   text-align: unset;
 }
+.gold-plan-nudge {
+  border: 1px solid #fab73b;
+  border-radius: 4px;
+  background-color: #fab73b1a;
+  color: #4d4d4d;
+}
+.d-flex-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p12 {
+  padding: 12px;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.cur-p {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.text-medium {
+  font-weight: 500;
+}

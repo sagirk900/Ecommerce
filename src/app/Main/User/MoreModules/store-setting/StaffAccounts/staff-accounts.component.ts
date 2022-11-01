@@ -9,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StaffAccountsComponent implements OnInit {
   staffCount=0;
+  seatCount=1;
+  perSeatCost=1500;
+  totalSeatCost=this.seatCount * this.perSeatCost;
   staffList:StaffModel[]=[];
   roleList:RoleModel[]=[
     new RoleModel(1,"Admin"),
@@ -38,5 +41,20 @@ export class StaffAccountsComponent implements OnInit {
   }
   getRoleNameById(id:number|null){
     return <string>this.roleList.find(x=>x.id == id)?.text;
+  }
+  RemoveStaff(id:number|null){
+    this.staffList.splice(this.staffList.findIndex(x=>x.id==id),1);
+    this.staffCount = this.staffList.length;
+  }
+  CalculateTotal(isAddition:boolean){
+    if(isAddition){
+      this.seatCount+=1;
+    }
+    else{
+      if(this.seatCount!=1){
+        this.seatCount-=1;
+      }
+    }
+    this.totalSeatCost = this.seatCount * this.perSeatCost;
   }
 }
