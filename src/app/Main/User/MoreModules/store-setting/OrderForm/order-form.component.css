@@ -1,13 +1,15 @@
-.ordercardbody h6
+.ordercardbody h4
 {
-  font-size: 16px;
+  font-size: 24px;
   font-family: 'Poppin',sans-serif;
   color: #1A181E;
-  font-weight: normal;
+  font-weight: 500;
+  line-height: 1.2;
+
 }
 .ordercardbody p
 {
-  font-size: 14px;
+  font-size: 16px;
 
   color: #4d4d4d;
   font-family: 'Poppin',sans-serif;

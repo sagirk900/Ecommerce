@@ -1,0 +1,48 @@
+.supportcard1 .card-title
+{
+  font-size: 24px;
+  color: #212529;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+    line-height: 1.2;
+}
+.supportcard2 .card-title
+{
+  font-size: 24px;
+  color: #212529;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+    line-height: 1.2;
+}
+.supportcard1 .form-group label
+{
+  font-size: 16px;
+    line-height: 20px;
+    color: #4d4d4d;
+    font-family: 'Poppins',sans-serif;
+}
+.supportcard2 .form-group label
+{
+  font-size: 16px;
+    line-height: 20px;
+    color: #4d4d4d;
+    font-family: 'Poppins',sans-serif;
+}
+.supportcard2 .form-control:focus
+{
+  border-color: inherit;
+  box-shadow: none;
+}
+.supportbtn
+{
+  background-color: #146eb4;
+  color: white;
+  border-color:#146eb4 ;
+}
+.supportbtn:hover
+{
+  background-color: #146eb4;
+  color: white;
+  border-color:#146eb4;
+  transform: scale(1.1);
+}

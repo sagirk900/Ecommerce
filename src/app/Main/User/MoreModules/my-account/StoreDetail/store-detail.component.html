@@ -3,7 +3,7 @@
   <div class="container p-2 mb-5" style="background-color: white;">
     <div class="mb-1" >
       <div class="p-3">
-        <h4>Store Logo</h4>
+        <h4 style="font-family:'Poppins',sans-serif;">Store Logo</h4>
       </div>
       <div class="logoCls ps-3 pe-3">
         <img [src]="url" alt="" height="100px" width="100px">
@@ -16,9 +16,9 @@
   <div class="container p-2" style="background-color: white;">
     <div class="mt-1">
       <div class="p-3">
-        <h4>Store Information</h4>
+        <h4 style="font-family: 'Poppins',sans-serif;">Store Information</h4>
       </div>
-      <div class="row p-3">
+      <div class="row storedetailrow p-3">
         <div class="col-6 form-group">
           <label for="StoreLink">Store Link</label>
           <input type="text" class="form-control" id="StoreLink" placeholder="Enter Your Store Link" ngModel name="StoreLink">
@@ -28,7 +28,7 @@
           <input type="text" required class="form-control" id="BusinessName" ngModel name="BusinessName" placeholder="Enter Your Business Name">
         </div>
       </div>
-      <div class="row p-3">
+      <div class="row storedetailrow  p-3">
         <div class="col-6 form-group">
           <label for="BusinessCat">Business Category<span class="text-danger"> * </span></label>
           <input type="text" placeholder="Choose Business Category" [(ngModel)]="selectedCatText" name="BusinessCategory" data-toggle="modal" data-target="#exampleModal" required class="form-control" id="BusinessCat">
@@ -72,7 +72,7 @@
         </div>
 
       </div>
-      <div class="row p-3">
+      <div class="row storedetailrow  p-3">
         <div class="col-6 form-group">
           <label for="Email">Email Address</label>
           <input type="text" class="form-control" ngModel name="Email" id="Email" placeholder="Enter Your Email">
@@ -87,19 +87,18 @@
         </div>
       </div>
 
-      <div class="row p-3">
+      <div class="row storedetailrow  p-3">
         <div class="col-6 form-group">
           <label for="StoreLink">FSSAI Number</label>
           <input type="text" ngModel name="FSSAINo" class="form-control" id="StoreLink" placeholder="Enter FSSAI Number">
         </div>
-      </div>
-
-      <div class="row p-3">
-        <div class="col-12 form-group">
+        <div class="col-6 form-group">
           <label for="Address">Store Address</label>
           <input type="text" ngModel name="StoreAddress" class="form-control" id="Address" placeholder="Enter Your Address">
         </div>
       </div>
+
+
     </div>
   </div>
   <div class="container p-2 mt-3 text-center">

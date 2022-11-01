@@ -1,0 +1,37 @@
+.policiycard1header .nav-item .active
+{
+
+    background-color: #146eb4;
+    color: #fff;
+    border-color: #146eb4;
+}
+.addstorepgbtn
+{
+  background-color: #146eb4;
+    color: #fff;
+    border-color: #146eb4;
+}
+.addstorepgbtn:hover
+{
+  background-color: #146eb4;
+    color: #fff;
+    border-color: #146eb4;
+}
+.policiycard1header .nav-link
+{
+  height: 32px;
+  word-break: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: gray;
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+  padding: 5px 16px;
+  border-radius: 40px;
+  outline: none;
+}
+.policiycard1header
+{
+  background-color: white;
+}
