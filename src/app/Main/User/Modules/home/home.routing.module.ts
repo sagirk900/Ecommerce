@@ -32,6 +32,19 @@ import { UserDashboardComponent } from '../user-dashboard/user-dashboard.compone
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { MyAccountComponent } from '../../MoreModules/my-account/my-account.component';
+import { ProductComponent } from '../product/product.component';
+import { AddnewproductComponent } from '../product/addnewproduct/addnewproduct.component';
+import { ProductInformationComponent } from '../product/addnewproduct/product-information/product-information.component';
+import { ProductmediaComponent } from '../product/addnewproduct/productmedia/productmedia.component';
+import { SizesComponent } from '../product/addnewproduct/sizes/sizes.component';
+import { ColorsComponent } from '../product/addnewproduct/colors/colors.component';
+import { InventoryComponent } from '../product/addnewproduct/inventory/inventory.component';
+import { CategoriesComponent } from '../product/categories/categories.component';
+import { InventoriesComponent } from '../product/inventories/inventories.component';
+import { AddnewcategoryComponent } from '../product/categories/addnewcategory/addnewcategory.component';
+import { CategoryInformationComponent } from '../product/categories/category-information/category-information.component';
+import { CategoryBannerComponent } from '../product/categories/category-banner/category-banner.component';
+import { CategoryContentComponent } from '../product/categories/category-content/category-content.component';
 
 
 const userRoutes: Routes = [
@@ -71,6 +84,26 @@ const userRoutes: Routes = [
         ]
       },
       {path:'Delivery',component:DeliveryComponent},
+      {path:'Product',component:AddnewproductComponent,
+      children:[
+        {path:'AddNewProduct',component:AddnewproductComponent},
+        {path:'pinformation',component:ProductInformationComponent},
+        {path:'pinventory',component:InventoryComponent},
+        {path:'pmedia',component:ProductmediaComponent},
+        {path:'psizes',component:SizesComponent},
+        {path:'pcolors',component:ColorsComponent},
+      ]
+    },
+    
+    {path:'pcategories',component:AddnewcategoryComponent,
+    children:[
+      {path:'AddNewcategory',component:AddnewcategoryComponent},
+      {path:'cinformation',component:CategoryInformationComponent},
+      {path:'cbanner',component:CategoryBannerComponent},
+      {path:'ccontent',component:CategoryContentComponent},
+    ]
+  },
+    {path:'pinventories',component:InventoriesComponent},
       {path:'Discounts',component:DiscountsComponent},
       {path:'Coupon',component:CouponComponent,
         children:[

@@ -1,0 +1,73 @@
+
+        .Deliverycard1title
+        {
+            font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+        }
+        label
+        {
+            font-size: 14px;
+    line-height: 20px;
+    color: #4d4d4d;
+    margin-bottom: 8px;
+        }
+
+.Deliverycard2title
+{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.Deliverycard3title
+{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.deliveryaccorcard1 .card-header
+{
+    background-color: white;
+}
+.deliveryaccorcard2 .card-header
+{
+    background-color: white;
+}
+.deliveryaccorcard3 .card-header
+{
+    background-color: white;
+}
+.deliveryaccorcard1 .btn-link
+{
+
+    text-decoration: none;
+}
+.deliveryaccorcard2 .btn-link
+{
+
+    text-decoration: none;
+}
+.deliveryaccorcard3 .btn-link
+{
+
+    text-decoration: none;
+}
+.createorderbtn
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 7px 24px;
+    background-color: #146eb4;
+    color: #fff;
+    border-color: #146eb4;
+}
+.createorderbtn:hover
+{
+    background-color: #146eb4;
+    color: #fff;
+    border-color: #146eb4;
+}

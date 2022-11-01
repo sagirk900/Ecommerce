@@ -22,6 +22,20 @@ import { NgModule } from "@angular/core";
 import { HomeComponent } from './home/home.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { HomeStepComponent } from './home/home-step/home-step.component';
+import { ProductComponent } from './product/product.component';
+import { AddnewproductComponent } from './product/addnewproduct/addnewproduct.component';
+import { ProductInformationComponent } from './product/addnewproduct/product-information/product-information.component';
+import { ProductmediaComponent } from './product/addnewproduct/productmedia/productmedia.component';
+import { InventoryComponent } from './product/addnewproduct/inventory/inventory.component';
+import { AddonsComponent } from './product/addnewproduct/addons/addons.component';
+import { SizesComponent } from './product/addnewproduct/sizes/sizes.component';
+import { ColorsComponent } from './product/addnewproduct/colors/colors.component';
+import { CategoriesComponent } from './product/categories/categories.component';
+import { InventoriesComponent } from './product/inventories/inventories.component';
+import { AddnewcategoryComponent } from './product/categories/addnewcategory/addnewcategory.component';
+import { CategoryInformationComponent } from './product/categories/category-information/category-information.component';
+import { CategoryBannerComponent } from './product/categories/category-banner/category-banner.component';
+import { CategoryContentComponent } from './product/categories/category-content/category-content.component';
 
 @NgModule({
   declarations:[
@@ -37,7 +51,21 @@ import { HomeStepComponent } from './home/home-step/home-step.component';
     BuyGetFreeComponent,
     FreeShippingComponent,
     PercentDiscountComponent,
-    CustomersComponent
+    CustomersComponent,
+    ProductComponent,
+    AddnewproductComponent,
+    ProductInformationComponent,
+    ProductmediaComponent,
+    InventoryComponent,
+    AddonsComponent,
+    SizesComponent,
+    ColorsComponent,
+    CategoriesComponent,
+    InventoriesComponent,
+    AddnewcategoryComponent,
+    CategoryInformationComponent,
+    CategoryBannerComponent,
+    CategoryContentComponent
   ],
   imports:[
     LayoutModule,

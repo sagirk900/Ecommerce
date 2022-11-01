@@ -1,0 +1,55 @@
+.ordercardbody h6
+{
+  font-size: 16px;
+  font-family: 'Poppin',sans-serif;
+  color: #1A181E;
+  font-weight: normal;
+}
+.ordercardbody p
+{
+  font-size: 14px;
+
+  color: #4d4d4d;
+  font-family: 'Poppin',sans-serif;
+}
+.ordercardbody .form-cehck label
+{
+  color: #1A181E;
+  font-size: 16px;
+  font-family: 'Poppin',sans-serif;
+}
+
+.ordercardbody2 .form-control:focus
+{
+  border-color: black;
+}
+
+.ordersavebtn
+{
+  background-color: #146eb4;
+  color: white;
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 24px;
+}
+.ordersavebtn:hover
+{
+  background-color: #146eb4;
+  color: white;
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 24px;
+    transform: scale(1.1);
+}
+.ordercardbody2  input[type='text']::placeholder,
+.ordercardbody2  input[type='email']::placeholder,
+.ordercardbody2  input[type='tel']::placeholder
+{
+  font-size: 16px;
+  color: #1A181E;
+  font-weight: 400;
+  font-family: 'Poppin',sans-serif;
+  text-transform: capitalize;
+}

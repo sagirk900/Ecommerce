@@ -1,0 +1,79 @@
+.product-images-section {
+    margin-bottom: 24px;
+    padding: 24px 24px 8px;
+}
+
+.card, .theme-sidebar--block .theme-sidebar-card, .menu-structure-container, .menu-list-card, .page-card, .reviews-importer-plugin .filters-card, .sidebar-filters-card, .marketing-canvas-container, .graphics-container, .store-timings-card, .manage-item-card, .subscription-container .dukaan-enterprise-card, .subscription-container .domestic-plans-container .domestic-plan-card-container .domestic-plan-card, .hsn-code-finder-card .hsn-search-results, .hsn-code-finder-card, .account-navigation-card, .shortcuts-grid, .recommendations__card, .getting-started-section .content-item-card, .quick-navigation-card, .store-menu-container, .announcement-grid.dashboard-announcement-grid .announcement-item, .announcement-grid.announcement-dropdown-menu, .sidebar-stepper-container {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #1a181e0a;
+    background-color: #fff;
+}
+
+.section-text-5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+
+.product-theme-aspect-ratio .file-image-upload {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+.file-image-upload:not(.has-image) {
+    border: 1px solid #ccc;
+}
+.px12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.py12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.file-image-upload {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    cursor: pointer;
+}
+.file-button-upload, .file-image-upload {
+    position: relative;
+}
+.file-image-upload input {
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.product-media-upload-max svg {
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.product-media-upload svg {
+    margin-top: 12px;
+}
+.px4 {
+    margin:auto;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.py8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.recomsize
+{
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+}
