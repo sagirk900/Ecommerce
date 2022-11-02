@@ -1,0 +1,16 @@
+
+.newproduct
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 24px;
+    border: solid 1px rgba(0,0,0,0);
+    background-color: #146eb4;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.newproduct:hover
+{
+    transform: scale(1.1);
+}

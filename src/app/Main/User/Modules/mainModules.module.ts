@@ -1,3 +1,4 @@
+import { AllProductComponent } from './product/AllProducts/AllProduct.component';
 import { CustomersComponent } from './Customers/customers.component';
 import { PercentDiscountComponent } from './Discounts/Coupon/PercentDiscount/percent-discount.component';
 import { FreeShippingComponent } from './Discounts/Coupon/FreeShipping/free-shipping.component';
@@ -24,12 +25,6 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { HomeStepComponent } from './home/home-step/home-step.component';
 import { ProductComponent } from './product/product.component';
 import { AddnewproductComponent } from './product/addnewproduct/addnewproduct.component';
-import { ProductInformationComponent } from './product/addnewproduct/product-information/product-information.component';
-import { ProductmediaComponent } from './product/addnewproduct/productmedia/productmedia.component';
-import { InventoryComponent } from './product/addnewproduct/inventory/inventory.component';
-import { AddonsComponent } from './product/addnewproduct/addons/addons.component';
-import { SizesComponent } from './product/addnewproduct/sizes/sizes.component';
-import { ColorsComponent } from './product/addnewproduct/colors/colors.component';
 import { CategoriesComponent } from './product/categories/categories.component';
 import { InventoriesComponent } from './product/inventories/inventories.component';
 import { AddnewcategoryComponent } from './product/categories/addnewcategory/addnewcategory.component';
@@ -54,18 +49,13 @@ import { CategoryContentComponent } from './product/categories/category-content/
     CustomersComponent,
     ProductComponent,
     AddnewproductComponent,
-    ProductInformationComponent,
-    ProductmediaComponent,
-    InventoryComponent,
-    AddonsComponent,
-    SizesComponent,
-    ColorsComponent,
     CategoriesComponent,
     InventoriesComponent,
     AddnewcategoryComponent,
     CategoryInformationComponent,
     CategoryBannerComponent,
-    CategoryContentComponent
+    CategoryContentComponent,
+    AllProductComponent
   ],
   imports:[
     LayoutModule,

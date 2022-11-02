@@ -1,3 +1,4 @@
+import { AllProductComponent } from './../product/AllProducts/AllProduct.component';
 import { WarehouseComponent } from './../../MoreModules/store-setting/Warehouse/warehouse.component';
 import { SupportAndSocialComponent } from './../../MoreModules/store-setting/SupportAndSocial/support-and-social.component';
 import { StoreTimingComponent } from './../../MoreModules/store-setting/StoreTiming/store-timing.component';
@@ -34,11 +35,6 @@ import { NgModule } from '@angular/core';
 import { MyAccountComponent } from '../../MoreModules/my-account/my-account.component';
 import { ProductComponent } from '../product/product.component';
 import { AddnewproductComponent } from '../product/addnewproduct/addnewproduct.component';
-import { ProductInformationComponent } from '../product/addnewproduct/product-information/product-information.component';
-import { ProductmediaComponent } from '../product/addnewproduct/productmedia/productmedia.component';
-import { SizesComponent } from '../product/addnewproduct/sizes/sizes.component';
-import { ColorsComponent } from '../product/addnewproduct/colors/colors.component';
-import { InventoryComponent } from '../product/addnewproduct/inventory/inventory.component';
 import { CategoriesComponent } from '../product/categories/categories.component';
 import { InventoriesComponent } from '../product/inventories/inventories.component';
 import { AddnewcategoryComponent } from '../product/categories/addnewcategory/addnewcategory.component';
@@ -84,17 +80,14 @@ const userRoutes: Routes = [
         ]
       },
       {path:'Delivery',component:DeliveryComponent},
-      {path:'Product',component:AddnewproductComponent,
+      {path:'Product',component:ProductComponent,
       children:[
+        {path:'',component:AllProductComponent},
         {path:'AddNewProduct',component:AddnewproductComponent},
-        {path:'pinformation',component:ProductInformationComponent},
-        {path:'pinventory',component:InventoryComponent},
-        {path:'pmedia',component:ProductmediaComponent},
-        {path:'psizes',component:SizesComponent},
-        {path:'pcolors',component:ColorsComponent},
+
       ]
     },
-    
+
     {path:'pcategories',component:AddnewcategoryComponent,
     children:[
       {path:'AddNewcategory',component:AddnewcategoryComponent},
