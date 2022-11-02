@@ -1,0 +1,18 @@
+.domaincard1 .card-title
+{
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #212529;
+  font-size: 24px;
+  font-family: 'Poppins',sans-serif;
+}
+.domaincard1 .card-body .row1
+{
+  font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 10px 12px;
+    text-align: left;
+    background-color: #f2f2f2;
+}
