@@ -1,0 +1,111 @@
+<div class="container-fluid">
+  <div class="row mx-2 my-4">
+      <div class="col-lg-6 col-12">
+          <div class="btn-group d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-outline-primary btnprimary rounded">All</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">New</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">Returning</button>
+              <button type="button" class="btn btn-outline-primary btnprimary rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3 mb-lg-0 mb-3">Imported</button>
+           </div>
+      </div>
+      <div class="col-lg-6 col-12">
+
+          <div class="btn-group d-flex justify-content-lg-end justify-content-start flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column" role="group" aria-label="Basic example">
+              <button type="button" class="btn downbtn rounded" data-toggle="tooltip" data-placement="bottom" title="Download customer list"><i class="fa fa-download" aria-hidden="true"></i></button>
+              <button type="button" data-toggle="modal" data-target="#addcustomer" class="btn addcustbtn rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">Add Customers</button>
+              <button type="button" class="btn impcustbtn  rounded ml-xl-4 ml-lg-4 ml-0 mt-xl-0 mt-lg-0 mt-3">Import customers</button>
+           </div>
+
+           <!-- add customer modal -->
+           <div class="modal fade" id="addcustomer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Custome details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                 <div class="row">
+                  <div class="col-12 text-left">
+                      <form action="">
+                          <div class="form-group">
+                              <label for="name">Name</label>
+                              <input type="text" class="form-control" id="customername" placeholder="Enter the name" autofocus required>
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="customermail" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                              <label for="number">Phone Number</label>
+                              <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">+966</span>
+                                  </div>
+                                  <input type="tel" class="form-control" placeholder="Enter your Number.">
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                              <div class="col-12 text-center">
+                                  <button type="button" class="btn px-4 addcustomerformbtn">Add Customer</button>
+                              </div>
+                            </div>
+                     </form>
+                  </div>
+                 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+  <div class="row mx-2 my-5">
+      <div class="col-12">
+          <div class="card">
+            <div class="card-header d-flex flex-lg-row flex-column justify-content-xl-between justify-content-lg-between justify-content-sm-center justify-content-center align-items-xl-start align-items-lg-start align-items-center">
+              <div>
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1" style="background-color: white;" ><i class="fa fa-search"></i></span>
+                      </div>
+                      <input type="text" class="form-control allorderformcontrol" placeholder="Name, mobile number or a city" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+              </div>
+              <div>
+                  <div class="dropdown allorderdropdown">
+                      <button class="btn btn-primary  allorderbtn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        choose Day
+                      </button>
+                      <div class="dropdown-menu mt-xl-3 mt-lg-3 dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Lifetime</a>
+                        <a class="dropdown-item" href="#">Today</a>
+                        <a class="dropdown-item" href="#">Yesterday</a>
+                        <a class="dropdown-item" href="#">This week</a>
+                        <a class="dropdown-item" href="#">Last Week</a>
+                        <a class="dropdown-item" href="#">This Month</a>
+                        <a class="dropdown-item" href="#">Last Month</a>
+                        <a class="dropdown-item" href="#">Custom Range</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row bg bg-light py-2">
+                  <div class="col-2">
+                      <input type="checkbox" id="custname" name="custname" class="mr-2 mt-2">
+                      <label for="">Customer Name</label>
+                  </div>
+                  <div class="col-2 text-center">Mobile Number</div>
+                  <div class="col-2 text-center">Email</div>
+                  <div class="col-2 text-center">City</div>
+                  <div class="col-2 text-center">Total Orders</div>
+                  <div class="col-2 text-center">Total Sales</div>
+              </div>
+
+            </div>
+          </div>
+      </div>
+  </div>
+ </div>

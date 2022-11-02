@@ -38,6 +38,7 @@ import { TrafficComponent } from './Analytics/Traffic/traffic.component';
 import { DiscountListComponent } from './Discounts/DiscountList/discount-list.component';
 import { ProductListComponent } from './product/AllProducts/ProductList/product-list.component';
 import { CategoryListComponent } from './product/categories/CategoryList/category-list.component';
+import { CustomerListComponent } from './Customers/CustomerList/customer-list.component';
 
 @NgModule({
   declarations:[
@@ -69,7 +70,8 @@ import { CategoryListComponent } from './product/categories/CategoryList/categor
     DiscountListComponent,
     AllProductComponent,
     ProductListComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    CustomerListComponent
   ],
   imports:[
     LayoutModule,
