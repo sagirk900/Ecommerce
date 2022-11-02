@@ -1,0 +1,39 @@
+
+.section-text-12 {
+font-size: 32px;
+line-height: 38px;
+font-weight: 500;
+}
+.analytics__overview-card-stat {
+color: #1a181e;
+padding-right: 5px;
+}
+.text-2, .staff-verify-layout .page .action .mobile-description, .staff-verify-layout .page .action .description, .staff-verify-layout .page .body .main .subtitle {
+font-size: 16px;
+line-height: 24px;
+}
+.analytics__overview-card-title {
+text-transform: uppercase;
+color: #4d4d4d;
+width: 100%;
+}
+.allorderbtn
+{
+background-color: white;
+font-size: 14px;
+line-height: 22px;
+color: #4d4d4d;
+text-transform: capitalize;
+padding: 10px;
+transition-property: transform;
+transition-duration: 0.5s;
+transition-timing-function: linear;
+border: solid 1px #d9d9d9;
+
+}
+.allorderbtn:hover
+{
+transform: scale(1.1);
+border-color:blue ;
+}
+

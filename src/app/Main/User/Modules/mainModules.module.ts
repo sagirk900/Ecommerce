@@ -36,6 +36,11 @@ import { AddnewcategoryComponent } from './product/categories/addnewcategory/add
 import { CategoryInformationComponent } from './product/categories/category-information/category-information.component';
 import { CategoryBannerComponent } from './product/categories/category-banner/category-banner.component';
 import { CategoryContentComponent } from './product/categories/category-content/category-content.component';
+import { AnalyticsComponent } from './Analytics/analytics.component';
+import { SalesComponent } from './Analytics/Sales/sales.component';
+import { ProductsAnalyticsComponent } from './Analytics/Products/products.component';
+import { TrafficComponent } from './Analytics/Traffic/traffic.component';
+import { DiscountListComponent } from './Discounts/DiscountList/discount-list.component';
 
 @NgModule({
   declarations:[
@@ -65,7 +70,12 @@ import { CategoryContentComponent } from './product/categories/category-content/
     AddnewcategoryComponent,
     CategoryInformationComponent,
     CategoryBannerComponent,
-    CategoryContentComponent
+    CategoryContentComponent,
+    AnalyticsComponent,
+    SalesComponent,
+    ProductsAnalyticsComponent,
+    TrafficComponent,
+    DiscountListComponent
   ],
   imports:[
     LayoutModule,

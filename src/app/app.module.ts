@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { MainModules } from './Main/User/Modules/mainModules.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
 @NgModule({
   declarations: [
     AppComponent,
