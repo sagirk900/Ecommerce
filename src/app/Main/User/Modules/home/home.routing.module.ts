@@ -1,4 +1,9 @@
+
 import { AllProductComponent } from './../product/AllProducts/AllProduct.component';
+import { ProductsAnalyticsComponent } from './../Analytics/Products/products.component';
+import { TrafficComponent } from './../Analytics/Traffic/traffic.component';
+import { SalesComponent } from './../Analytics/Sales/sales.component';
+import { AnalyticsComponent } from './../Analytics/analytics.component';
 import { WarehouseComponent } from './../../MoreModules/store-setting/Warehouse/warehouse.component';
 import { SupportAndSocialComponent } from './../../MoreModules/store-setting/SupportAndSocial/support-and-social.component';
 import { StoreTimingComponent } from './../../MoreModules/store-setting/StoreTiming/store-timing.component';
@@ -79,6 +84,12 @@ const userRoutes: Routes = [
           {path:'AbondanedCarts',component:AbandonedCartsComponent}
         ]
       },
+      {path:'Analytics',component:AnalyticsComponent,
+    children:[
+      {path:'',component:SalesComponent},
+      {path:'AnalyticTraffic',component:TrafficComponent},
+      {path:'AnalyticProd',component:ProductsAnalyticsComponent}
+    ]},
       {path:'Delivery',component:DeliveryComponent},
       {path:'Product',component:ProductComponent,
       children:[

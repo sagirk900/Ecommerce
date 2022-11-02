@@ -8,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiscountsComponent implements OnInit {
 
+couponCount=0;
   constructor(private router:Router) {
     sessionStorage.setItem('pageTitle','Discount Coupons');
    }
 
   ngOnInit(): void {
+
+    this.couponCount = parseInt(<string>(sessionStorage.getItem('couponCount')==null?"0":sessionStorage.getItem('couponCount')));
+    console.log(sessionStorage.getItem('couponCount'))
   }
   gotoURL(id:number){
     if(id==0){
