@@ -1,49 +1,125 @@
+<div class="d-flex m-5 fixed-container my-4">
+  <div class="fill-available">
+    <div class="m-0 p-0 row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col-12">
+            <div class="product-images-section card" id="product-images">
+              <h4 class="section-text-5 mb24">Catgory Image</h4>
+              <div class="product-images-wrap show-product-image-scrollbar pb16 product-theme-aspect-ratio mb-3">
+                <div class="file-image-upload product-media-upload px12 py12 product-media-upload-max">
+                  <input type="file" accept="image/*" multiple="">
+                  <div class="d-flex flex-column align-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 42 35"
+                      class="px4 py8">
+                      <g clip-path="url(#clip9)">
+                        <path stroke="#D9D9D9" stroke-width="1.2"
+                          d="M67.667-38.5h-93.334C-30.82-38.5-35-34.321-35-29.167v93.334c0 5.154 4.179 9.333 9.333 9.333h93.334C72.82 73.5 77 69.321 77 64.167v-93.334c0-5.154-4.179-9.333-9.333-9.333z">
+                        </path>
+                        <path fill="#4D4D4D"
+                          d="M15.909 1.07l-.18.012c-.356.05-.677.249-.879.55l-3.019 4.493H5.727c-2.577 0-4.666 2.075-4.666 4.634v18.537c0 2.56 2.089 4.635 4.666 4.635h30.546c2.577 0 4.666-2.075 4.666-4.635V10.76l-.008-.282c-.147-2.428-2.176-4.352-4.658-4.352h-6.106L27.15 1.632c-.236-.351-.634-.563-1.06-.563H15.91zm.68 2.527h8.82l3.017 4.493c.236.352.633.563 1.059.563h6.788c1.171 0 2.12.943 2.12 2.106v18.537c0 1.164-.949 2.107-2.12 2.107H5.727c-1.171 0-2.121-.943-2.121-2.107V10.76c0-1.163.95-2.106 2.121-2.106h6.788l.18-.013c.356-.05.677-.249.88-.55l3.015-4.493z">
+                        </path>
+                        <path fill="#4D4D4D"
+                          d="M21 11.18c-4.452 0-8.06 3.584-8.06 8.005 0 4.421 3.608 8.005 8.06 8.005s8.06-3.584 8.06-8.005c0-4.42-3.608-8.004-8.06-8.004zm0 2.528c3.046 0 5.515 2.452 5.515 5.477 0 3.025-2.47 5.477-5.515 5.477-3.046 0-5.515-2.452-5.515-5.477 0-3.024 2.469-5.477 5.515-5.477z">
+                        </path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip9">
+                          <path fill="#fff" d="M0 0H42V35H0z"></path>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <p></p>
 
-<div class="d-flex fixed-container my-4">
-    <div class="account-navigation-card">
-      <div class="account-navigation-item">
-        <p>
-         <i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>
-          Quick Navigation</p>
+                  </div>
+                  <div class="upload-image-wrapper">
 
-      </div>
+                  </div>
+                </div>
+                <div class="form-group my-4 col-6">
+                  <label for="inputEmail4">Category Name</label>
+                  <input type="text" class="form-control" id="Warehousename" placeholder="Enter Category Name">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
 
-      <div class="account-navigation-item">
-        <a href="" [routerLink]="['./cinformation']" (click)="changeSubMenu(1)" [ngClass]="{'active':selectedSubMenuId==1}" >
-          <p class="account-navigation-item-label"><i class="fa fa-shopping-bag ps-2 pe-2" aria-hidden="true"></i>
-          Information</p>
-        </a>
-      </div>
-      <div class="account-navigation-item">
-        <a href="" [routerLink]="['./cbanner']" (click)="changeSubMenu(2)"
-          [ngClass]="{'active':selectedSubMenuId==2}">
-          <p class="account-navigation-item-label"><i class="fa fa-bell ps-2 pe-2"></i>
-          Banner</p>
-        </a>
-      </div>
-      <div class="account-navigation-item">
-        <a href="" [routerLink]="['./ccontent']" (click)="changeSubMenu(3)" [ngClass]="{'active':selectedSubMenuId==3}">
-          <p class="account-navigation-item-label"><i class="fa fa-fax ps-2 pe-2"></i>Content</p>
-        </a>
-      </div>
-      <!-- <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link" href="">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="">Link</a>
-    </li>
-  </ul> -->
-    </div>
-    <div class="fill-available">
-      <div class="p-2">
-        <h3>{{getSubMenuTitle()}}</h3>
-      </div>
-      <div class="m-0 p-0" style="">
-        <router-outlet ></router-outlet>
+
+            <div class="product-images-section" id="product-images" style="background-color: white;">
+              <div id="accordion">
+                <div class="">
+                  <div class="" data-toggle="collapse" data-target="#collapseOne" id="headingOne">
+                    <h4 class="section-text-5 mb24" data-toggle="collapse" data-target="#collapseOne">Banner</h4>
+                    <p class="section-text-7 c-gray-1 pb16">Add a category banner at the top of product listing</p>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+
+
+
+                      <div class="product-images-section card" id="product-images">
+                        <div
+                          class="product-images-wrap show-product-image-scrollbar pb16 product-theme-aspect-ratio mb-3">
+                          <div class="file-image-upload product-media-upload px12 py12 product-media-upload-max">
+                            <input type="file" accept="image/*" multiple="">
+                            <div class="d-flex flex-column align-center">
+                              <div class="jss2348">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18 18">
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill="#4D4D4D" fill-rule="nonzero">
+                                      <g>
+                                        <g>
+                                          <path
+                                            d="M9 0c.577 0 1.052.434 1.117.994l.008.131v6.75h6.75C17.496 7.875 18 8.379 18 9c0 .577-.434 1.052-.994 1.117l-.131.008h-6.75v6.75C10.125 17.496 9.621 18 9 18c-.577 0-1.052-.434-1.117-.994l-.008-.131v-6.75h-6.75C.504 10.125 0 9.621 0 9c0-.577.434-1.052.994-1.117l.131-.008h6.75v-6.75C7.875.504 8.379 0 9 0z"
+                                            transform="translate(-1204 -392) translate(481 374) translate(723 18)">
+                                          </path>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                                <p class="c-black-3 section-text-7 mt8 mb4">Add category banner</p>
+                                <p class="text-10 c-gray-1">Recommended size (1296px*236px)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+
+
+            <div class="product-images-section" id="product-images" style="background-color: white;">
+              <div id="accordion">
+                <div class="">
+                  <div class="" data-toggle="collapse" data-target="#collapseThree" id="headingOne">
+                    <h4 class="section-text-5 mb24" data-toggle="collapse" data-target="#collapseThree">Content</h4>
+                    <p class="section-text-7 c-gray-1 pb16">Add a category banner at the top of product listing</p>
+                  </div>
+
+                  <div id="collapseThree" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 p-5 text-end">
+            <button class="btn btn-outline-primary" (click)="AddNewCategory()">Add Category</button>
+          </div>
+        </div>
+        <div class="col-2"></div>
 
       </div>
     </div>

@@ -1,3 +1,4 @@
+import { AllProductComponent } from './product/AllProducts/AllProduct.component';
 import { CustomersComponent } from './Customers/customers.component';
 import { PercentDiscountComponent } from './Discounts/Coupon/PercentDiscount/percent-discount.component';
 import { FreeShippingComponent } from './Discounts/Coupon/FreeShipping/free-shipping.component';
@@ -24,12 +25,6 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { HomeStepComponent } from './home/home-step/home-step.component';
 import { ProductComponent } from './product/product.component';
 import { AddnewproductComponent } from './product/addnewproduct/addnewproduct.component';
-import { ProductInformationComponent } from './product/addnewproduct/product-information/product-information.component';
-import { ProductmediaComponent } from './product/addnewproduct/productmedia/productmedia.component';
-import { InventoryComponent } from './product/addnewproduct/inventory/inventory.component';
-import { AddonsComponent } from './product/addnewproduct/addons/addons.component';
-import { SizesComponent } from './product/addnewproduct/sizes/sizes.component';
-import { ColorsComponent } from './product/addnewproduct/colors/colors.component';
 import { CategoriesComponent } from './product/categories/categories.component';
 import { InventoriesComponent } from './product/inventories/inventories.component';
 import { AddnewcategoryComponent } from './product/categories/addnewcategory/addnewcategory.component';
@@ -41,6 +36,9 @@ import { SalesComponent } from './Analytics/Sales/sales.component';
 import { ProductsAnalyticsComponent } from './Analytics/Products/products.component';
 import { TrafficComponent } from './Analytics/Traffic/traffic.component';
 import { DiscountListComponent } from './Discounts/DiscountList/discount-list.component';
+import { ProductListComponent } from './product/AllProducts/ProductList/product-list.component';
+import { CategoryListComponent } from './product/categories/CategoryList/category-list.component';
+import { CustomerListComponent } from './Customers/CustomerList/customer-list.component';
 
 @NgModule({
   declarations:[
@@ -59,12 +57,6 @@ import { DiscountListComponent } from './Discounts/DiscountList/discount-list.co
     CustomersComponent,
     ProductComponent,
     AddnewproductComponent,
-    ProductInformationComponent,
-    ProductmediaComponent,
-    InventoryComponent,
-    AddonsComponent,
-    SizesComponent,
-    ColorsComponent,
     CategoriesComponent,
     InventoriesComponent,
     AddnewcategoryComponent,
@@ -75,7 +67,11 @@ import { DiscountListComponent } from './Discounts/DiscountList/discount-list.co
     SalesComponent,
     ProductsAnalyticsComponent,
     TrafficComponent,
-    DiscountListComponent
+    DiscountListComponent,
+    AllProductComponent,
+    ProductListComponent,
+    CategoryListComponent,
+    CustomerListComponent
   ],
   imports:[
     LayoutModule,
