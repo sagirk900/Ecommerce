@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddnewproductComponent implements OnInit {
 
-
+  productCount=0;
   selectedSubMenuId=1;
-  constructor() {
+  constructor(private router:Router) {
     sessionStorage.setItem('pageTitle','Product');
     sessionStorage.setItem('subMenu','Product Information');
   }
 
   ngOnInit(): void {
+    this.productCount = parseInt(<string>(sessionStorage.getItem('productCount')==null?"0":sessionStorage.getItem('productCount')));
   }
 
   getSubMenuTitle():string{
@@ -24,4 +26,9 @@ export class AddnewproductComponent implements OnInit {
     this.selectedSubMenuId = menuId;
   }
 
+  AddNewProduct(){
+    this.productCount+=1;
+    sessionStorage.setItem('productCount',this.productCount.toString());
+    this.router.navigateByUrl("User/Product");
+  }
 }

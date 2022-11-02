@@ -1,0 +1,125 @@
+
+.finalproduct-row1-col1
+{
+display: flex;
+justify-content: center;
+}
+.finalproduct-row1-col1 .finalproduct-row1-col1-div1
+{
+
+    flex-grow: 1;
+}
+.finalproduct-row1-col1 .finalproduct-row1-col1-div2
+{
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.finalproduct-row1-col1 .finalproduct-row1-col1-div2 div:nth-child(1)
+{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: underline;
+    text-decoration-style:solid;
+    cursor: pointer;
+    flex-grow: 4;
+}
+.finalproduct-row1-col1 .finalproduct-row1-col1-div2 div:nth-child(2)
+{
+
+    flex-grow: 1;
+}
+.finalproduct-row1-col1 .finalproduct-row1-col1-div2 div:nth-child(3)
+{
+
+    flex-grow: 1;
+}
+.finalproduct-row1-col1 .finalproduct-row1-col1-div2 div:nth-child(4)
+{
+
+    flex-grow: 1;
+}
+.search-filter {
+    width: 200px;
+}
+.search-filter {
+    position: relative;
+}
+.search-filter .search-img {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+}
+.search-filter input {
+    font-size: 14px;
+    line-height: 22px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    padding: 2px 28px 2px 40px;
+    color: #1a181e;
+    width: 100%;
+}
+.finalproduct-row1-col1-div2-div1 .form-check-label
+{
+    font-size: 14px;
+    color: #4d4d4d;
+    font-family: 'Poppins',sans-serif;
+    line-height: 14px;
+}
+.hamburgbtn
+{
+    background-color: #146eb426;
+    border-color:#146eb426 ;
+     box-shadow:none ;
+
+}
+.hamburgbtn:hover
+{
+    background-color: #146eb426;
+    border-color:#146eb426 ;
+     box-shadow:none ;
+    transform: scale(1.1);
+}
+.addprobtn
+{
+    background-color: #146eb4;
+    color: white;
+   padding: 7px 20px;
+   box-shadow: none;
+   border: none;
+   font-size: 16px;
+   font-family: 'Poppins',sans-serif;
+
+}
+.addprobtn:hover
+{
+    background-color: #146eb4;
+    color: white;
+    padding: 7px 20px;
+   box-shadow: none;
+   border: none;
+  transform: scale(1.1);
+}
+.addprobtn1
+{
+    background-color: #146eb4;
+    color: white;
+
+   box-shadow: none;
+
+}
+.addprobtn1:hover
+{
+    background-color: #146eb4;
+    color: white;
+
+  border: none;
+box-shadow: none;
+}
+.menubtn:hover
+{
+    transform: scale(1.1);
+}

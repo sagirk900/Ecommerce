@@ -7,18 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./AllProduct.component.css']
 })
 export class AllProductComponent implements OnInit {
-
+  productCount=0;
   selectedSubMenuId=1;
   constructor(private router:Router) {
     sessionStorage.setItem('pageTitle','Product');
-    sessionStorage.setItem('subMenu','Store Details');
   }
 
   ngOnInit(): void {
-  }
-
-  getSubMenuTitle():string{
-    return <string>sessionStorage.getItem('subMenu');
+    this.productCount = parseInt(<string>(sessionStorage.getItem('productCount')==null?"0":sessionStorage.getItem('productCount')));
   }
   changeSubMenu(menuId:number){
     this.selectedSubMenuId = menuId;
