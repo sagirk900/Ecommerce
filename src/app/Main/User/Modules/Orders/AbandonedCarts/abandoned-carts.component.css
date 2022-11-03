@@ -21,6 +21,7 @@
     font-size: 14px;
     line-height: 22px;
     color: #4d4d4d;
+    font-family: 'Poppins',sans-serif;
     text-transform: capitalize;
     /* padding: 10px; */
     transition-property: transform;
@@ -73,6 +74,7 @@
     font-size: 16px;
     line-height: 24px;
     padding: 7px 24px;
+    font-family: 'Poppins',sans-serif;
     background-color: #146eb4;
     color: #fff;
     border-color: #146eb4;
@@ -133,13 +135,16 @@
 }
 .allordersnoorderfound
 {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+    color: #1a181e;
 }
 .allorderstorelink
 {
     color: #4d4d4d;
     font-size: 16px;
     line-height: 24px;
+    font-family: 'Poppins',sans-serif;
 }
