@@ -1,8 +1,9 @@
 
         .section-text-12 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 38px;
     font-weight: 500;
+    font-family: 'Poppins',sans-serif;
 }
 .analytics__overview-card-stat {
     color: #1a181e;
@@ -16,6 +17,8 @@
     text-transform: uppercase;
     color: #4d4d4d;
     width: 100%;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
 }
 .allorderbtn
 {
